@@ -1,0 +1,7 @@
+{
+  "debug.javascript.autoAttachSmartPattern": [
+    "!**/node_modules/**",
+    "${workspaceFolder}/**",
+    "**/$KNOWN_TOOLS$/**"
+  ]
+}
