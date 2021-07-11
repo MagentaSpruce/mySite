@@ -6,7 +6,7 @@ import { GiSpyglass, GiWoodCabin, GiSmartphone } from "react-icons/gi";
 export const links = [
   {
     id: 1,
-    url: "/home",
+    url: "/",
     text: "main lodge",
     icon: <GiWoodCabin />,
   },

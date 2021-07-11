@@ -5,7 +5,7 @@ const Error = () => {
   return (
     <div>
       <h2>Sorry friend, you've gotten lost!</h2>
-      <Link to="/home" className="btn">
+      <Link to="/" className="btn">
         Main Lodge
       </Link>
     </div>

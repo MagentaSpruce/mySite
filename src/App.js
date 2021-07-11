@@ -11,9 +11,8 @@ function App() {
   return (
     <Router>
       <main>
-        <Sidebar />
         <Switch>
-          <Route exact path="/home">
+          <Route exact path="/">
             <Home />
             <Sidebar />
             <Modal />

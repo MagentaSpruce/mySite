@@ -4,7 +4,6 @@ import { useGlobalContext } from "./Context";
 import Snowfall from "react-snowfall";
 import Wave from "react-wavify";
 import { GiShoonerSailboat } from "react-icons/gi";
-import { Link } from "react-router-dom";
 
 const Sidebar = () => {
   const { isSidebarOpen, closeSidebar } = useGlobalContext();
