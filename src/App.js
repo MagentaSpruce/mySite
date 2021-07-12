@@ -7,6 +7,7 @@ import Error from "./Error";
 import Modal from "./Modal";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Card from "./Card";
+import Experience from "./Experience";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
             <Sidebar />
             <Modal />
             <Card />
+            <Experience />
           </Route>
           <Route path="/about">
             <About />

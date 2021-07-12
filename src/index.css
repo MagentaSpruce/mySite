@@ -95,7 +95,7 @@ main {
   font-size: 3.5rem;
   background: transparent;
   border-color: transparent;
-  color: black;
+  color: white;
   transition: var(--transition);
   cursor: pointer;
   animation: home-icon-scale 4s linear infinite reverse;
@@ -586,7 +586,8 @@ main {
 
 .waves {
   position: absolute;
-  bottom: -40%;
+  bottom: -41%;
+  z-index: 100;
 }
 
 @keyframes home-icon-scale {
@@ -644,12 +645,12 @@ main {
   0% {
     bottom: 9%;
     left: -30vw;
-    transform: translateY() rotate(-25deg);
+    transform: translateY(0.5rem) rotate(15deg);
   }
 
   15% {
-    transform: translateY(0.5rem) rotate(5deg);
-    bottom: 9%;
+    transform: translateY(0.5rem) rotate(15deg);
+    bottom: 11%;
   }
 
   35% {
@@ -659,7 +660,7 @@ main {
 
   65% {
     transform: translateY(-1rem) rotate(10deg);
-    bottom: 7.5%;
+    bottom: 8%;
   }
 
   100% {
@@ -806,6 +807,156 @@ svg:active {
   font-size: 1.3rem !important;
 }
 /********************************************/
+
+/*TECH STACK EXPERIENCE CONTAINER*/
+
+.techExperience {
+  margin-top: 5vh;
+  min-height: 92vh;
+  position: relative;
+}
+
+.tech-section-header {
+  position: relative;
+  color: whitesmoke;
+  top: 0.3vh;
+  margin-top: 4.6vh;
+}
+
+.underline {
+  width: 5rem;
+  height: 0.25rem;
+  margin-bottom: 1.25rem;
+  background: deepskyblue;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.underline-1 {
+  position: relative;
+  top: 4vh;
+}
+.title {
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+.tech-center {
+  width: 80vw;
+  margin: 0 auto;
+  max-width: var(--max-width);
+}
+.btn-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 4rem;
+  flex-wrap: wrap;
+}
+.tech-btn {
+  background: transparent;
+  border-color: transparent;
+  text-transform: capitalize;
+  font-size: 1.25rem;
+
+  letter-spacing: 1px;
+  margin: 0.5rem 0.5rem;
+  transition: var(--transition);
+  cursor: pointer;
+  padding: 0.25rem 0;
+  line-height: 1;
+  outline-color: deepskyblue;
+  color: #4588b4;
+}
+.tech-btn:hover {
+  color: deepskyblue;
+  box-shadow: 0 2px skyblue;
+}
+.active-btn {
+  color: whitesmoke !important;
+  filter: brightness(100%);
+  box-shadow: 0 2px deepskyblue;
+}
+
+.tech-info {
+  position: relative;
+  bottom: 3vh;
+}
+
+.tech-info h3 {
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+.tech-info h4 {
+  text-transform: uppercase;
+  color: var(--dark-blue);
+  background: whitesmoke;
+  display: inline-block;
+  padding: 0.375rem 0.75rem;
+  border-radius: 1rem;
+  font-size: 1rem;
+}
+.tech-date {
+  letter-spacing: var(--spacing);
+  font-size: 1rem;
+}
+.tech-desc {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 2rem;
+  align-items: center;
+  margin-bottom: 1.25rem;
+  font-size: 1.3rem;
+}
+.tech-desc p {
+  margin-bottom: 0;
+  color: whitesmoke;
+  filter: brightness(95%);
+  font-family: poppins;
+}
+.tech-icon {
+  color: deepskyblue;
+}
+
+.sextant {
+  font-size: 3.5rem;
+  position: relative;
+  left: 9vw;
+  transform: rotate(-25deg);
+  margin-bottom: -2vh;
+}
+
+.btnTech {
+  text-transform: uppercase;
+  background: red;
+  color: rebeccapurple;
+  padding: 0.375rem 0.75rem;
+  letter-spacing: 1px;
+  font-weight: 700;
+  -webkit-transition: var(--transition);
+  transition: var(--transition);
+  font-size: 0.875rem;
+  border: 2px solid transparent;
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  border-radius: 1rem;
+  display: block;
+  width: 12rem;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 3rem;
+}
+.btnTech:hover {
+  color: pink;
+  background: pink;
+}
+
+.treasure-chest {
+  position: absolute;
+  right: 0;
+  font-size: 7rem;
+}
+
 /********************************************/
 /********************************************/
 /********************************************/
@@ -814,6 +965,26 @@ svg:active {
 @media screen and (min-width: 676px) {
   .sidebar {
     width: 400px;
+  }
+
+  .techs-center {
+    width: 90vw;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    column-gap: 4rem;
+  }
+  .btn-container {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .tech-btn {
+    margin-bottom: 1rem;
+  }
+  .active-btn {
+    box-shadow: -2px 0 var(--clr-primary-5);
+  }
+  .tech-btn:hover {
+    box-shadow: -2px 0 var(--clr-primary-5);
   }
 }
 

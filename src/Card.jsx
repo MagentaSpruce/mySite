@@ -26,6 +26,7 @@ export default function MediaCard() {
   return (
     <>
       <h2 className="card-title">Featured Projects</h2>
+      <div className="underline"></div>
       <Card classes={{ root: "card-element" }} className={classes.root}>
         <CardActionArea classes={{ root: "card-element-background" }}>
           <CardMedia
