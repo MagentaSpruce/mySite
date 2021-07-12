@@ -1,15 +1,9 @@
 import React, { Component } from "react";
 // import Particles from "react-particles-js";
-import {
-  GiYinYang,
-  GiAlliedStar,
-  GiHoodedFigure,
-  GiBarracks,
-} from "react-icons/gi";
+import { GiYinYang, GiBarracks } from "react-icons/gi";
 import { FaFighterJet } from "react-icons/fa";
 import { useGlobalContext } from "./Context";
 import Particle from "./Particle";
-import Projects from "./Projects";
 
 const Home = () => {
   const { openSidebar, openModal } = useGlobalContext();
@@ -36,9 +30,6 @@ const Home = () => {
         <div className="home-header-bottom">
           <h1>Spruce</h1>
         </div>
-        <section className="projects-container">
-          <Projects />
-        </section>
       </main>
     </>
   );

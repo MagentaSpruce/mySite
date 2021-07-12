@@ -6,6 +6,7 @@ import Contact from "./Contact";
 import Error from "./Error";
 import Modal from "./Modal";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Card from "./Card";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
             <Home />
             <Sidebar />
             <Modal />
+            <Card />
           </Route>
           <Route path="/about">
             <About />

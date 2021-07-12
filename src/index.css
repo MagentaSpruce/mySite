@@ -78,6 +78,7 @@ p {
 main {
   min-height: 100vh;
   display: flex;
+  flex-direction: column;
   place-items: center;
   justify-content: center;
 }
@@ -99,6 +100,7 @@ main {
   cursor: pointer;
   animation: home-icon-scale 4s linear infinite reverse;
   transform-origin: center center;
+  z-index: 99;
 }
 
 .sidebar-toggle:hover {
@@ -344,6 +346,7 @@ main {
   transition: var(--transition);
   transform: translate(-100%);
   overflow: hidden;
+  z-index: 100;
 }
 
 .show-sidebar {
@@ -751,11 +754,62 @@ svg:active {
   transform: translateY(0.2rem);
 }
 
-/* PROJECTS CONTAINER */
-.projects-container {
-  position: relative;
-  top: 50vh;
+/* CARDS CONTAINER */
+
+.card-title {
+  color: whitesmoke;
 }
+.card-element {
+  border: 3px rgb(18, 178, 231) solid;
+}
+.card-element:not(:last-child) {
+  margin-bottom: 4vh;
+}
+
+.card-element-background {
+  background-color: #1f43685e !important;
+}
+
+.card-picture-1 {
+  /* background: url("./favicon.png") 50% !important; */
+  background-image: url("./favicon.png") !important;
+  background: whitesmoke;
+  height: 40vh !important;
+
+  content: "";
+  display: block;
+  margin: 5vh auto 0 auto;
+  width: 80%;
+  padding-top: 2vh;
+  border: 3px solid var(--dark-blue);
+}
+
+.card-header-text {
+  color: var(--dark-blue);
+  text-align: center;
+}
+
+.card-body-text {
+  color: var(--dark-blue) !important;
+  text-align: center;
+}
+
+.card-footer {
+  background-color: var(--dark-blue);
+}
+
+.card-footer-icon {
+  color: whitesmoke !important;
+}
+.card-footer-icon1 {
+  color: whitesmoke !important;
+  font-size: 1.3rem !important;
+}
+/********************************************/
+/********************************************/
+/********************************************/
+/********************************************/
+/********************************************/
 
 @media screen and (min-width: 676px) {
   .sidebar {
