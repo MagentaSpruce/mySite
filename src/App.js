@@ -32,6 +32,7 @@ function App() {
             <Sidebar />
             <AboutBio />
             <AboutPhoto />
+            <Footer className="about-footer" />
           </Route>
           <Route path="/contact">
             <Contact />

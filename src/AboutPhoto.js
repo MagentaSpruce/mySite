@@ -1,9 +1,21 @@
 import React from "react";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
-import flipper from "./flipper.jpg";
+import me from "./me.jpg";
 
 const AboutPhoto = () => {
-  return <h1>hi</h1>;
+  return (
+    <>
+      <div className="about-image-div">
+        <div>
+          <img className="about-img" src={me} alt="" />
+        </div>
+        <div className="img-icons-container">
+          <AiFillGithub className="about-icons" />
+          <AiFillLinkedin className="about-icons" />
+        </div>
+      </div>
+    </>
+  );
 };
 
 export default AboutPhoto;

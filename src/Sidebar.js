@@ -35,7 +35,7 @@ const Sidebar = () => {
       </div> */}
       <div>
         <svg
-          height="95%"
+          height="45%"
           width="100%"
           id="svg"
           viewBox="0 0 1440 400"

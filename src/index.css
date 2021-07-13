@@ -1099,7 +1099,7 @@ svg:active {
 /********************************************/
 /*FOOTER*/
 footer {
-  min-height: 30vh;
+  min-height: 25vh;
 
   display: flex;
   justify-content: center;
@@ -1226,15 +1226,28 @@ footer {
   text-align: left;
 }
 
-.about-icons-container {
-  position: relative;
-  bottom: 3vh;
-  left: 23vw;
+.about-img {
+  margin-top: 10vh;
+  border-radius: 50%;
+  border: 3px white solid;
+  width: 70vw;
 }
 
-.about-icon {
-  font-size: 3rem;
-  margin-right: 2rem;
+.about-image-div {
+  position: relative;
+}
+
+.img-icons-container {
+  text-align: center;
+  font-size: 4rem;
+  position: relative;
+  top: 4vh;
+  right: 11vw;
+  margin-bottom: 2.5vh;
+}
+
+.about-icons {
+  margin-left: 20vw;
 }
 
 @keyframes pointer {
@@ -1248,7 +1261,109 @@ footer {
     transform: translateY(0);
   }
 }
-/* ABOUT PAGE */
+/* CONTACT */
+.pw-container {
+  background-color: #23455b;
+  max-width: 85%;
+  border-radius: 5px;
+  box-shadow: 1rem 0.7rem 1rem rgba(0, 0, 0, 0.2);
+  border: 3px solid skyblue;
+}
+
+.pw-header {
+  padding: 1rem;
+  position: relative;
+}
+
+.pw {
+  background-color: #4588b4;
+  color: #142834;
+  height: 8rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  font-size: 3rem;
+  padding: 1rem;
+  position: relative;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.copy {
+  position: absolute;
+  bottom: -5%;
+  right: 25%;
+  background-color: deepskyblue;
+  padding: 4px 0.8rem;
+  color: #23455b;
+  font-weight: 700;
+  border: none;
+  border-radius: 3px;
+  font-family: inherit;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+::selection {
+  background-color: skyblue;
+}
+
+button:hover {
+  transform: translateY(2px);
+  box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  opacity: 1;
+}
+button:active {
+  transform: translateY(0px);
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0.2);
+  opacity: 1;
+}
+
+.pw-body {
+  padding: 2px 1rem;
+}
+
+.form-control {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5rem 0;
+  color: #142834;
+}
+
+.generate {
+  display: block;
+  background-color: deepskyblue;
+  color: #142834;
+  font-weight: bold;
+  padding: 1.5rem;
+  font-size: 1.5rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s;
+  width: 99%;
+  margin: 2.5rem auto 1.5rem;
+  letter-spacing: 1px;
+  border-radius: 5px;
+}
+
+.generate:hover {
+  transform: translateY(-2px);
+}
+.generate:active {
+  transform: translateY(0px);
+}
+
+input {
+  background-color: #4588b4;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+}
+
+label {
+  color: #4588b4;
+}
 /* ABOUT PAGE */
 /* ABOUT PAGE */
 /********************************************/
