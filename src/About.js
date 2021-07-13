@@ -1,7 +1,5 @@
 import React from "react";
-import Sidebar from "./Sidebar";
-import { Link } from "react-router-dom";
-import { GiYinYang, GiBarracks } from "react-icons/gi";
+import { GiYinYang } from "react-icons/gi";
 import { ImArrowDown } from "react-icons/im";
 
 import { useGlobalContext } from "./Context";

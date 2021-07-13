@@ -1,54 +1,43 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import emailjs from "emailjs-com";
+
+import { GiYinYang } from "react-icons/gi";
+import { useGlobalContext } from "./Context";
 
 const Contact = () => {
+  const { openSidebar, openModal } = useGlobalContext();
+  function sendEmail(e) {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_1yqkhsi",
+        "template_80jj74g",
+        e.target,
+        "user_VOjAjHBHYyuc9oglCHwdz"
+      )
+      .then((res) => {
+        console.log(res);
+      })
+      .catch((err) => console.log(err));
+  }
   return (
     <>
       <main>
-        <div className="pw-container">
-          <h1>Password Generator 🗝</h1>
-          <div className="pw-header">
-            <div className="pw" id="pw"></div>
-            <button className="copy" id="copy">
-              Copy to clipboard
-            </button>
-          </div>
-          <div className="pw-body">
-            <div className="htmlForm-control">
-              <label htmlFor="length">
-                &nbsp;&nbsp;&nbsp;&nbsp;Password Length
-              </label>
-              <input id="length" type="number" value="15" min="6" max="17" />
-            </div>
-          </div>
-          <div className="pw-body">
-            <div className="htmlForm-control">
-              <label htmlFor="upper">Contain Uppercase Letters</label>
-              <input className="check" id="upper" type="checkbox" />
-            </div>
-          </div>
-          <div className="pw-body">
-            <div className="htmlForm-control">
-              <label htmlFor="lower">Contain Lowercase Letters</label>
-              <input className="check" id="lower" type="checkbox" />
-            </div>
-          </div>
-          <div className="pw-body">
-            <div className="htmlForm-control">
-              <label htmlFor="number">Contain Numbers</label>
-              <input className="check" id="number" type="checkbox" />
-            </div>
-          </div>
-          <div className="pw-body">
-            <div className="htmlForm-control">
-              <label htmlFor="symbol">Contain Symbols</label>
-              <input className="check" id="symbol" type="checkbox" />
-            </div>
-            <button id="generate" className="generate">
-              Create Password
-            </button>
-          </div>
-        </div>
+        <button className="sidebar-toggle" onClick={openSidebar}>
+          <GiYinYang />
+        </button>
+        <h2 className="contact-header">Question, idea or opportunity?</h2>
+        <div className="underline"></div>
+        <form onSubmit={sendEmail}>
+          <label>name</label>
+          <input type="text" name="name" />
+          <label>email</label>
+          <input type="email" name="user_email" />
+          <label>message</label>
+          <textarea name="message" rows="4" />
+          <input type="submit" value="Send" />
+        </form>
       </main>
     </>
 
