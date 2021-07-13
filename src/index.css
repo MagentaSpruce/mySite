@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
 
 :root {
   --dark-blue: #002244;
@@ -958,7 +959,174 @@ svg:active {
 }
 
 /********************************************/
+/*EXTRA WORKS CONTAINER*/
+.works-header {
+  margin-top: 5vh;
+}
+
+.works-underline-1 {
+  position: relative;
+  top: 6.5vh;
+}
+
+.container {
+  width: 80vw;
+  max-width: var(--fixed-width);
+}
+
+.works {
+  background: #4a92c1;
+  padding: 2.5rem 2rem;
+  border-radius: 1rem;
+  box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.3);
+  transition: var(--transition);
+  text-align: center;
+  width: 75vw;
+  margin-bottom: 5vh;
+  border: 3px deepskyblue solid;
+}
+
+.works:hover {
+  box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.3);
+}
+
+.img-container {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-bottom: 1vh;
+  right: 1.5vw;
+}
+.project-img {
+  width: 100%;
+  display: block;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  position: relative;
+}
+.fan-icon {
+  position: absolute;
+  top: 0;
+  left: 4vw;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  transform: translateY(25%);
+  background: whitesmoke;
+  color: black;
+  font-size: 2rem;
+  animation: fan-spin 0.2s linear infinite forwards;
+  animation-direction: normal;
+  fill: var(--dark-blue);
+}
+
+/* @keyframes fan-spin {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(359deg);
+  }
+} */
+.img-container::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: var(--dark-blue);
+  position: absolute;
+  top: -0.25rem;
+  right: -0.5rem;
+  border-radius: 50%;
+}
+.name {
+  margin-bottom: 0.25rem;
+}
+.project {
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  color: var(--dark-blue);
+  font-size: 0.85rem;
+}
+.info {
+  margin-bottom: 0.75rem;
+  color: whitesmoke;
+}
+.prev-btn,
+.next-btn {
+  color: var(--dark-blue);
+  font-size: 1.25rem;
+  background: transparent;
+  border-color: transparent;
+  margin: 0 0.5rem;
+  transition: var(--transition);
+  cursor: pointer;
+}
+.prev-btn:hover,
+.next-btn:hover {
+  color: deepskyblue;
+}
+.random-btn {
+  margin-top: 2vh;
+  background: var(--dark-blue);
+  color: whitesmoke;
+  padding: 0.25rem 0.5rem;
+  text-transform: capitalize;
+  border-radius: 1rem;
+  transition: var(--transition);
+  border: 3px rgb(2, 216, 253) solid;
+
+  cursor: pointer;
+}
+.random-btn:hover {
+  background: orange;
+  color: rebeccapurple;
+}
+
+.icon {
+  font-size: 4rem;
+  color: var(--dark-blue) !important;
+}
+
 /********************************************/
+/*FOOTER*/
+footer {
+  min-height: 30vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  font-family: "Satisfy", cursive;
+  color: #fff;
+}
+
+.neonP {
+  animation: p 0.11s ease-in-out infinite alternate;
+  border: 0.2rem solid #fff;
+  padding: 1rem;
+  border-radius: 2rem;
+  box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 2rem #3340b1,
+    0 0 0.8rem #2729a8, 0 0 2.8rem #431cc2, inset 0 0 1.3rem #6765db;
+}
+
+@keyframes p {
+  100% {
+    text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff, 0 0 42px #0829be,
+      0 0 82px #0d2bb1, 0 0 92px #0c28a8, 0 0 102px #092086, 0 0 151px #050d33;
+  }
+}
+
+.neontext {
+  color: #fff;
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0829be,
+    0 0 82px #0d2bb1, 0 0 92px #0c28a8, 0 0 102px #092086, 0 0 151px #050d33;
+}
+
 /********************************************/
 /********************************************/
 

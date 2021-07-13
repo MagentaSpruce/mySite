@@ -8,6 +8,8 @@ import Modal from "./Modal";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Card from "./Card";
 import Experience from "./Experience";
+import Extras from "./Extras";
+import Footer from "./Footer";
 
 function App() {
   return (
@@ -20,6 +22,8 @@ function App() {
             <Modal />
             <Card />
             <Experience />
+            <Extras />
+            <Footer />
           </Route>
           <Route path="/about">
             <About />
