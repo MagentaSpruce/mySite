@@ -7,8 +7,8 @@ const Stack = [
     experience: "2500+ Hours",
     stack: [
       "HTML, CSS, SASS, Bootstrap, JavaScript, & React based",
-      "UI / UX responsive design and implementation",
-      "Git / Version control",
+      "UI | UX responsive design and implementation",
+      "Git | Version control",
       "Testing & debugging",
     ],
     label: "front-end",
@@ -20,7 +20,7 @@ const Stack = [
     experience: "1000+ Hours",
     stack: [
       "NodeJS, Express, MongoDB, Mongoose & PUG based",
-      "Authentication & validation (JWT's)",
+      "Authentication, verification & validation (JWT's)",
       "Database management",
       "Web hosting",
     ],
@@ -32,7 +32,7 @@ const Stack = [
     title: "Current Trajectory",
     experience: "In order of learning:",
     stack: [
-      "NextJS, Three.js, React Native",
+      "NextJS | Three.js |  React Native",
       "Blockchain fundamentals",
       "Smart contract theory",
       "Solidity",

@@ -10,6 +10,8 @@ import Card from "./Card";
 import Experience from "./Experience";
 import Extras from "./Extras";
 import Footer from "./Footer";
+import AboutBio from "./AboutBio";
+import AboutPhoto from "./AboutPhoto";
 
 function App() {
   return (
@@ -28,6 +30,8 @@ function App() {
           <Route path="/about">
             <About />
             <Sidebar />
+            <AboutBio />
+            <AboutPhoto />
           </Route>
           <Route path="/contact">
             <Contact />
