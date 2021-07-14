@@ -7,7 +7,6 @@ import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
-import Nettlesherbs from "./nettlesLogo.png";
 
 import { RiGithubLine } from "react-icons/ri";
 
@@ -33,7 +32,7 @@ export default function MediaCard() {
             classes={{ root: "card-picture-1" }}
             className={classes.media}
             image="./nettlesLogo.png"
-            title="Contemplative Reptile"
+            title="Nettle's Herbs Logo"
           />
 
           <CardContent>
@@ -52,9 +51,9 @@ export default function MediaCard() {
               component="p"
             >
               A complete business website for a local company in Jacksonville,
-              FL. Fully built out and custom API built using NodeJS with
+              FL. Fully built out with a custom API built using NodeJS with
               Express. Front end Javascript with MongoDB and mongoose for data
-              storage along with Stripe for payments and nodemailer for emails.
+              storage. Stripe for payments, nodemailer for emails.
             </Typography>
           </CardContent>
         </CardActionArea>
@@ -78,9 +77,9 @@ export default function MediaCard() {
       <Card classes={{ root: "card-element" }} className={classes.root}>
         <CardActionArea classes={{ root: "card-element-background" }}>
           <CardMedia
-            classes={{ root: "card-picture-1" }}
+            classes={{ root: "card-picture-2" }}
             className={classes.media}
-            image="./nettlesLogo.png"
+            image="./bnLogo.png"
             title="Contemplative Reptile"
           />
 
@@ -91,7 +90,7 @@ export default function MediaCard() {
               variant="h5"
               component="h2"
             >
-              Nettle's Herbs | 2021
+              Hot in the Biscuit | 2021
             </Typography>
             <Typography
               classes={{ root: "card-body-text" }}
@@ -99,10 +98,8 @@ export default function MediaCard() {
               color="textSecondary"
               component="p"
             >
-              A complete business website for a local company in Jacksonville,
-              FL. Fully built out and custom API built using NodeJS with
-              Express. Front end Javascript with MongoDB and mongoose for data
-              storage along with Stripe for payments and nodemailer for emails.
+              A multi-page front-end business website for a local company in Koh
+              Samui, Thailand. Custom design with multiple media embeddings.
             </Typography>
           </CardContent>
         </CardActionArea>
@@ -126,7 +123,7 @@ export default function MediaCard() {
       <Card classes={{ root: "card-element" }} className={classes.root}>
         <CardActionArea classes={{ root: "card-element-background" }}>
           <CardMedia
-            classes={{ root: "card-picture-1" }}
+            classes={{ root: "card-picture-3" }}
             className={classes.media}
             image="./nettlesLogo.png"
             title="Contemplative Reptile"
@@ -139,7 +136,7 @@ export default function MediaCard() {
               variant="h5"
               component="h2"
             >
-              Nettle's Herbs | 2021
+              Forkify | 2021
             </Typography>
             <Typography
               classes={{ root: "card-body-text" }}
@@ -147,10 +144,9 @@ export default function MediaCard() {
               color="textSecondary"
               component="p"
             >
-              A complete business website for a local company in Jacksonville,
-              FL. Fully built out and custom API built using NodeJS with
-              Express. Front end Javascript with MongoDB and mongoose for data
-              storage along with Stripe for payments and nodemailer for emails.
+              A completely interactive recipe application which utilizes a
+              public API in order to access user recipe search request and
+              render back the ingredients and cooking instructions.
             </Typography>
           </CardContent>
         </CardActionArea>

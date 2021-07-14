@@ -3,7 +3,7 @@ import React from "react";
 const Footer = () => {
   return (
     <footer className="footer">
-      <a href="/contact">
+      <a href="/contact" className="footer-button">
         <p className="neontext neonP">Magenta Spruce</p>
       </a>
 

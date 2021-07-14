@@ -34,14 +34,14 @@ const Modal = () => {
       setHeader2("You broke it.");
       setPhoto("");
       setModalBodyText(
-        "Nice going. If I could just have another moment please.. I'm working fervently behind the scenes to connect all of the square pegs into the round holes 🛵"
+        "Nice going a? If I could just have another moment please.. I'm working fervently behind the scenes to connect all of the square pegs into the round holes 🛵"
       );
     } else if (value === "😒") {
       setValue("✅");
       setHeader1("");
-      setHeader2("I fixed it.");
+      setHeader2("Fixed it 😎");
       setModalBodyText(
-        "What? You thought I didn't know what I was doing or something? I went to university. 🧐"
+        "What? You thought I didn't know what I was doing or something? I went to university."
       );
       setPhoto(profilePic);
     } else if (value === "✅") {

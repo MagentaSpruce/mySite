@@ -28,8 +28,8 @@ const AboutBio = () => {
         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Coding, like medicine, is a very
         meticulous and cerebral affair which requires constant practice and
         attention to become very good at. I myself love the challenge of
-        constantly learning new things everyday and am stoked to be on such an
-        incredibly bright and uplifting journey as this one.
+        constantly learning new things everyday and am sincerely stoked to be on
+        such an incredibly bright and uplifting journey.
         <br />
         <br />
         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;I'd love to work together to make

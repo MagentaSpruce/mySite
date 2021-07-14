@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import people from "./ExtrasData";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import { RiGithubLine } from "react-icons/ri";
-import forkify from "./forkifyIcon.png";
 
 const Review = () => {
   const [index, setIndex] = useState(0);
@@ -40,20 +39,19 @@ const Review = () => {
     setIndex(checkNumber(randomNumber));
   };
 
-  //   useEffect(() => {
-  //     let slider = setInterval(() => {
-  //       setIndex(index + 1);
-  //     }, 3000);
-  //     return () => clearInterval(slider);
-  //   }, [index]);
+  // useEffect(() => {
+  //   let slider = setInterval(() => {
+  //     setIndex(index + 1);
+  //   }, 5000);
+  //   return () => clearInterval(slider);
+  // }, [index]);
   return (
     <>
       <div className="underline works-underline-1"></div>
       <h2 className="works-header">Additional Works</h2>
       <div className="underline"></div>
       <article className="works">
-        <div className="img-container">
-          <img src={image} alt={name} className="project-img" />
+        <div>
           <span className="fan-icon">
             <a href={label2}>
               {" "}

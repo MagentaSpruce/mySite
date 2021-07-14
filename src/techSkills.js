@@ -1,4 +1,3 @@
-import { GiSextant } from "react-icons/gi";
 const Stack = [
   {
     id: 1,
