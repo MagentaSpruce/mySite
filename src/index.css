@@ -1521,7 +1521,7 @@ label {
 
   .set-wave {
     position: relative;
-    top: -6.5vh;
+    top: -6vh;
     z-index: -10;
   }
 
