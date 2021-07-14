@@ -1,7 +1,7 @@
 {
   "name": "magentaspruce",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "homepage": "https://magentaspruce.github.io/mySite/",
   "dependencies": {
     "@material-ui/core": "^4.12.1",
