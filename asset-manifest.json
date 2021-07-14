@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/mySite/static/css/main.8f899233.chunk.css",
-    "main.js": "/mySite/static/js/main.59c785b9.chunk.js",
-    "main.js.map": "/mySite/static/js/main.59c785b9.chunk.js.map",
-    "runtime-main.js": "/mySite/static/js/runtime-main.b9f60ae9.js",
-    "runtime-main.js.map": "/mySite/static/js/runtime-main.b9f60ae9.js.map",
-    "static/js/2.bd3d5160.chunk.js": "/mySite/static/js/2.bd3d5160.chunk.js",
-    "static/js/2.bd3d5160.chunk.js.map": "/mySite/static/js/2.bd3d5160.chunk.js.map",
-    "static/js/3.be72a46f.chunk.js": "/mySite/static/js/3.be72a46f.chunk.js",
-    "static/js/3.be72a46f.chunk.js.map": "/mySite/static/js/3.be72a46f.chunk.js.map",
-    "index.html": "/mySite/index.html",
-    "static/css/main.8f899233.chunk.css.map": "/mySite/static/css/main.8f899233.chunk.css.map",
-    "static/js/2.bd3d5160.chunk.js.LICENSE.txt": "/mySite/static/js/2.bd3d5160.chunk.js.LICENSE.txt",
-    "static/media/index.css": "/mySite/static/media/sky.dd882097.jpg",
-    "static/media/bubble.5abfb2f4.png": "/mySite/static/media/bubble.5abfb2f4.png",
-    "static/media/me.9df30e6d.jpg": "/mySite/static/media/me.9df30e6d.jpg"
+    "main.css": "/static/css/main.7ba5129e.chunk.css",
+    "main.js": "/static/js/main.59c785b9.chunk.js",
+    "main.js.map": "/static/js/main.59c785b9.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.b71df67e.js",
+    "runtime-main.js.map": "/static/js/runtime-main.b71df67e.js.map",
+    "static/js/2.bd3d5160.chunk.js": "/static/js/2.bd3d5160.chunk.js",
+    "static/js/2.bd3d5160.chunk.js.map": "/static/js/2.bd3d5160.chunk.js.map",
+    "static/js/3.be72a46f.chunk.js": "/static/js/3.be72a46f.chunk.js",
+    "static/js/3.be72a46f.chunk.js.map": "/static/js/3.be72a46f.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.7ba5129e.chunk.css.map": "/static/css/main.7ba5129e.chunk.css.map",
+    "static/js/2.bd3d5160.chunk.js.LICENSE.txt": "/static/js/2.bd3d5160.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/static/media/sky.dd882097.jpg",
+    "static/media/bubble.5abfb2f4.png": "/static/media/bubble.5abfb2f4.png",
+    "static/media/me.9df30e6d.jpg": "/static/media/me.9df30e6d.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.b9f60ae9.js",
+    "static/js/runtime-main.b71df67e.js",
     "static/js/2.bd3d5160.chunk.js",
-    "static/css/main.8f899233.chunk.css",
+    "static/css/main.7ba5129e.chunk.css",
     "static/js/main.59c785b9.chunk.js"
   ]
 }
