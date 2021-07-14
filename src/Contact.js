@@ -1,5 +1,6 @@
 import React from "react";
 import emailjs from "emailjs-com";
+import Particle from "./Particle";
 
 import { GiYinYang } from "react-icons/gi";
 import { useGlobalContext } from "./Context";
@@ -23,21 +24,36 @@ const Contact = () => {
   }
   return (
     <>
+      <Particle />
       <main>
         <button className="sidebar-toggle" onClick={openSidebar}>
           <GiYinYang />
         </button>
         <h2 className="contact-header">Question, idea or opportunity?</h2>
         <div className="underline"></div>
-        <form onSubmit={sendEmail}>
-          <label>name</label>
-          <input type="text" name="name" />
-          <label>email</label>
-          <input type="email" name="user_email" />
-          <label>message</label>
-          <textarea name="message" rows="4" />
-          <input type="submit" value="Send" />
-        </form>
+        <div className="contact-container">
+          <h2 className="contact-form-header">Let's talk about it.</h2>
+
+          <form
+            autoComplete="off"
+            className="contact-form"
+            onSubmit={sendEmail}
+          >
+            <label className="contact-form-label-top">Your Name</label>
+            <input className="contact-form-input-top" type="text" name="name" />
+            <br />
+            <label className="contact-form-label-top">Your Email</label>
+            <input
+              className="contact-form-input-top"
+              type="email"
+              name="user_email"
+            />
+            <br />
+            <label className="contact-inputbox-label">Your message</label>
+            <textarea className="contact-input" name="message" rows="4" />
+            <input className="contact-button" type="submit" value="Send" />
+          </form>
+        </div>
       </main>
     </>
 

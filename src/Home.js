@@ -10,7 +10,7 @@ const Home = () => {
 
   return (
     <>
-      <main className="home-main">
+      <main>
         <Particle />
         <button className="sidebar-toggle" onClick={openSidebar}>
           <GiYinYang />

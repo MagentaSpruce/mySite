@@ -1,8 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@0,100;0,400;0,700;1,400&family=Satisfy&display=swap");
 
 :root {
+  --card-background: #1f43685e;
+  --pale-blue: #87ceeb;
+  --paler-blue: #4588b4;
+  --medium-blue: #00bfff;
+  --off-white: #f5f5f5;
   --dark-blue: #002244;
   --max-width: 1170px;
   --fixed-width: 620px;
@@ -19,7 +22,7 @@
 
 body {
   background: var(--dark-blue);
-  color: aliceblue;
+  color: var(--off-white);
   line-height: 1.5;
   font-size: 0.875rem;
 }
@@ -86,6 +89,7 @@ main {
 .particles {
   position: absolute;
   height: 100vh;
+  width: 100vw;
   z-index: -10;
 }
 /* SIDEBAR */
@@ -100,16 +104,15 @@ main {
   transition: var(--transition);
   cursor: pointer;
   animation: home-icon-scale 4s linear infinite reverse;
-  transform-origin: center center;
   z-index: 99;
 }
 
 .sidebar-toggle:hover {
-  color: whitesmoke;
+  color: var(--off-white);
 }
 
 .sidebar-toggle:active {
-  color: red;
+  color: var(--pale-blue);
 }
 
 .btn {
@@ -120,12 +123,12 @@ main {
   display: inline-block;
   transition: var(--transition);
   font-size: 0.875rem;
-  border: 4px solid #4588b4;
+  border: 4px solid var(--paler-blue);
   cursor: pointer;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
   border-radius: 1rem;
-  background: whitesmoke;
-  color: #002244;
+  background: var(--off-white);
+  color: var(--dark-blue);
   position: relative;
 }
 
@@ -167,9 +170,6 @@ main {
   overflow: hidden;
 }
 
-.home-main {
-  flex-direction: column;
-}
 .home-header-top,
 .home-header-bottom {
   color: transparent;
@@ -217,6 +217,7 @@ main {
 .icon-img {
   background: url("./iconImage.png");
 }
+
 /* Open/Close Modal */
 .show-modal {
   visibility: visible;
@@ -253,8 +254,8 @@ main {
 .modal-bio {
   font-size: 1.25rem;
   position: relative;
-  top: 3vh;
-  color: rgb(36, 36, 36);
+  top: 4vh;
+  color: var(--dark-blue);
   font-weight: 700;
 }
 
@@ -323,7 +324,7 @@ main {
 
 .close-modal-btn:hover {
   transform: translateY(-0.1rem);
-  background: var(--dark-blue);
+  background: magenta;
 }
 
 .close-modal-btn:active {
@@ -545,10 +546,9 @@ main {
   font-family: "Philosopher", sans-serif;
   text-transform: capitalize;
   padding: 1rem 1.5rem;
-  color: aliceblue;
+  color: var(--off-white);
   transition: var(--transition);
   letter-spacing: 1px;
-  margin-bottom: 0rem;
   position: relative;
   top: 4rem;
 }
@@ -587,7 +587,7 @@ main {
 
 .waves {
   position: absolute;
-  bottom: -41%;
+  bottom: -17%;
   z-index: 100;
 }
 
@@ -644,32 +644,33 @@ main {
 
 @keyframes sail {
   0% {
-    bottom: 9%;
+    bottom: 8%;
     left: -30vw;
-    transform: translateY(0.5rem) rotate(15deg);
+    transform: translateY(0.7rem) rotate(15deg);
   }
 
   15% {
-    transform: translateY(0.5rem) rotate(15deg);
+    transform: translateY(1.2rem) rotate(15deg);
     bottom: 11%;
   }
 
   35% {
-    transform: translateY(0.5rem) rotate(-10deg);
+    transform: translateY(0.15rem) rotate(-10deg);
     bottom: 10%;
   }
 
   65% {
-    transform: translateY(-1rem) rotate(10deg);
+    transform: translateY(-0.35rem) rotate(10deg);
     bottom: 8%;
   }
 
   100% {
-    transform: translateY(0.3rem) rotate(-10deg);
-    bottom: 9%;
+    transform: translateY(-1.2rem) rotate(-10deg);
+    bottom: 6%;
     left: 99vw;
   }
 }
+
 @keyframes bubble {
   0% {
     transform: translateY(1rem);
@@ -745,7 +746,7 @@ main {
 }
 
 .social-icons a:hover {
-  color: whitesmoke;
+  color: var(--off-white);
 }
 
 svg {
@@ -759,7 +760,7 @@ svg:active {
 /* CARDS CONTAINER */
 
 .card-title {
-  color: whitesmoke;
+  color: var(--off-white);
 }
 .card-element {
   border: 3px rgb(18, 178, 231) solid;
@@ -769,15 +770,13 @@ svg:active {
 }
 
 .card-element-background {
-  background-color: #1f43685e !important;
+  background-color: var(--card-background) !important;
 }
 
 .card-picture-1 {
-  /* background: url("./favicon.png") 50% !important; */
   background-image: url("./favicon.png") !important;
-  background: whitesmoke;
+  background: var(--off-white);
   height: 40vh !important;
-
   content: "";
   display: block;
   margin: 5vh auto 0 auto;
@@ -801,10 +800,10 @@ svg:active {
 }
 
 .card-footer-icon {
-  color: whitesmoke !important;
+  color: var(--off-white) !important;
 }
 .card-footer-icon1 {
-  color: whitesmoke !important;
+  color: var(--off-white) !important;
   font-size: 1.3rem !important;
 }
 /********************************************/
@@ -819,7 +818,7 @@ svg:active {
 
 .tech-section-header {
   position: relative;
-  color: whitesmoke;
+  color: var(--off-white);
   top: 0.3vh;
   margin-top: 4.6vh;
 }
@@ -827,16 +826,15 @@ svg:active {
 .underline {
   width: 5rem;
   height: 0.25rem;
-  margin-bottom: 1.25rem;
-  background: deepskyblue;
-  margin-left: auto;
-  margin-right: auto;
+  background: var(--medium-blue);
+  margin: 0 auto 1.25rem auto;
 }
 
 .underline-1 {
   position: relative;
   top: 4vh;
 }
+
 .title {
   margin-bottom: 4rem;
   text-align: center;
@@ -856,29 +854,29 @@ svg:active {
   position: relative;
   bottom: 3vh;
 }
+
 .tech-btn {
   background: transparent;
   border-color: transparent;
   text-transform: capitalize;
   font-size: 1.25rem;
-
   letter-spacing: 1px;
   margin: 0.5rem 0.5rem;
   transition: var(--transition);
   cursor: pointer;
   padding: 0.25rem 0;
   line-height: 1;
-  outline-color: deepskyblue;
-  color: #4588b4;
+  outline-color: var(--medium-blue);
+  color: var(--paler-blue);
 }
 .tech-btn:hover {
-  color: deepskyblue;
-  box-shadow: 0 2px skyblue;
+  color: var(--medium-blue);
+  box-shadow: 0 2px var(--pale-blue);
 }
 .active-btn {
-  color: whitesmoke !important;
+  color: var(--off-white) !important;
   filter: brightness(100%);
-  box-shadow: 0 2px deepskyblue;
+  box-shadow: 0 2px var(--medium-blue);
 }
 
 .tech-info {
@@ -890,19 +888,22 @@ svg:active {
   font-weight: 400;
   font-size: 1.5rem;
 }
+
 .tech-info h4 {
   text-transform: uppercase;
   color: var(--dark-blue);
-  background: whitesmoke;
+  background: var(--off-white);
   display: inline-block;
   padding: 0.375rem 0.75rem;
   border-radius: 1rem;
   font-size: 1rem;
 }
+
 .tech-date {
   letter-spacing: var(--spacing);
   font-size: 1rem;
 }
+
 .tech-desc {
   display: grid;
   grid-template-columns: auto 1fr;
@@ -912,14 +913,15 @@ svg:active {
   margin-bottom: 1.25rem;
   font-size: 1rem;
 }
+
 .tech-desc p {
   margin-bottom: 0;
-  color: whitesmoke;
+  color: var(--off-white);
   filter: brightness(95%);
   font-family: poppins;
 }
 .tech-icon {
-  color: deepskyblue;
+  color: var(--medium-blue);
 }
 
 .sextant {
@@ -930,7 +932,7 @@ svg:active {
   margin-bottom: -2vh;
 }
 
-.btnTech {
+/* .btnTech {
   text-transform: uppercase;
   background: red;
   color: rebeccapurple;
@@ -953,7 +955,7 @@ svg:active {
 .btnTech:hover {
   color: pink;
   background: pink;
-}
+} */
 
 .treasure-chest {
   position: absolute;
@@ -978,7 +980,7 @@ svg:active {
 }
 
 .works {
-  background: #4a92c1;
+  background: var(--paler-blue);
   padding: 2.5rem 2rem;
   border-radius: 1rem;
   box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.3);
@@ -987,7 +989,7 @@ svg:active {
   width: 80vw;
   margin-top: 2.5vh;
   margin-bottom: 5vh;
-  border: 3px deepskyblue solid;
+  border: 3px var(--medium-blue) solid;
 }
 
 .works:hover {
@@ -1003,6 +1005,7 @@ svg:active {
   margin-bottom: 1vh;
   right: 1.5vw;
 }
+
 .project-img {
   width: 100%;
   display: block;
@@ -1011,6 +1014,7 @@ svg:active {
   border-radius: 50%;
   position: relative;
 }
+
 .fan-icon {
   position: absolute;
   top: 0;
@@ -1021,7 +1025,7 @@ svg:active {
   place-items: center;
   border-radius: 50%;
   transform: translateY(25%);
-  background: whitesmoke;
+  background: var(--off-white);
   color: black;
   font-size: 2rem;
   animation: fan-spin 0.2s linear infinite forwards;
@@ -1037,6 +1041,7 @@ svg:active {
     transform: rotate(359deg);
   }
 } */
+
 .img-container::before {
   content: "";
   width: 100%;
@@ -1047,19 +1052,24 @@ svg:active {
   right: -0.5rem;
   border-radius: 50%;
 }
+
 .name {
   margin-bottom: 0.25rem;
 }
+
 .project {
   margin-bottom: 0.5rem;
   text-transform: uppercase;
   color: var(--dark-blue);
   font-size: 0.85rem;
+  font-family: poppins;
 }
 .info {
   margin-bottom: 0.75rem;
-  color: whitesmoke;
+  color: var(--off-white);
+  font-family: poppins;
 }
+
 .prev-btn,
 .next-btn {
   color: var(--dark-blue);
@@ -1070,15 +1080,17 @@ svg:active {
   transition: var(--transition);
   cursor: pointer;
 }
+
 .prev-btn:hover,
 .next-btn:hover {
-  color: deepskyblue;
+  color: var(--medium-blue);
 }
+
 .random-btn {
   margin-top: 2vh;
   background: var(--dark-blue);
-  color: whitesmoke;
-  padding: 0.25rem 0.5rem;
+  color: var(--off-white);
+  padding: 0.5rem 0.7rem;
   text-transform: capitalize;
   border-radius: 1rem;
   transition: var(--transition);
@@ -1087,8 +1099,9 @@ svg:active {
   cursor: pointer;
 }
 .random-btn:hover {
-  background: orange;
-  color: rebeccapurple;
+  background: var(--medium-blue);
+  color: var(--dark-blue);
+  border: 3px var(--dark-blue) solid;
 }
 
 .icon {
@@ -1100,7 +1113,6 @@ svg:active {
 /*FOOTER*/
 footer {
   min-height: 25vh;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1212,18 +1224,21 @@ footer {
 
 .about-me {
   width: 93vw;
-  color: whitesmoke;
+  color: var(--off-white);
   border: 3px #fff solid;
   padding: 0.5rem 0.5rem;
+  margin-top: 10vh;
 }
 
 .about-me-header {
   text-align: center;
+  margin-top: 1vh;
 }
 
 .about-p {
   font-size: 1.1rem;
   text-align: left;
+  font-family: poppins;
 }
 
 .about-img {
@@ -1231,10 +1246,6 @@ footer {
   border-radius: 50%;
   border: 3px white solid;
   width: 70vw;
-}
-
-.about-image-div {
-  position: relative;
 }
 
 .img-icons-container {
@@ -1271,69 +1282,55 @@ footer {
 
 .contact-form-header {
   text-align: center;
-  position: relative;
-  top: 1.5vh;
+  font-family: poppins;
+  padding: 1rem;
 }
-.pw-container {
+
+.contact-form {
+  padding: 0 1rem 0 1rem;
+  text-transform: capitalize;
+}
+
+.contact-form-label-top {
+  padding-right: 0.3rem;
+  color: var(--pale-blue);
+  font-size: 1.2rem;
+  font-family: poppins;
+}
+
+.contact-form-input-top {
+  padding: 0.6rem;
+  width: 100%;
+  margin-bottom: 0.6rem;
+  border: 3px var(--pale-blue) solid;
+
+  font-size: 1.2rem;
+}
+
+.contact-inputbox-label {
+  color: var(--pale-blue);
+  font-size: 1.2rem;
+  font-family: poppins;
+}
+
+.contact-container {
   background-color: #23455b;
   max-width: 85%;
   border-radius: 5px;
   box-shadow: 1rem 0.7rem 1rem rgba(0, 0, 0, 0.2);
-  border: 3px solid skyblue;
+  border: 3px solid var(--pale-blue);
 }
 
-.pw-header {
-  padding: 1rem;
-  position: relative;
-}
-
-.pw {
-  background-color: #4588b4;
-  color: #142834;
-  height: 8rem;
+.contact-input {
+  background-color: var(--paler-blue);
+  color: var(--off-white);
   width: 100%;
   display: flex;
-  align-items: center;
-  position: relative;
-  font-size: 3rem;
-  padding: 1rem;
-  position: relative;
-  border-radius: 5px;
-  overflow: hidden;
-}
-
-.copy {
-  position: absolute;
-  bottom: -5%;
-  right: 25%;
-  background-color: deepskyblue;
-  padding: 4px 0.8rem;
-  color: #23455b;
-  font-weight: 700;
-  border: none;
-  border-radius: 3px;
-  font-family: inherit;
-  transition: all 0.2s ease;
-  cursor: pointer;
-}
-
-::selection {
-  background-color: skyblue;
-}
-
-button:hover {
-  transform: translateY(2px);
-  box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.2);
-  opacity: 1;
-}
-button:active {
-  transform: translateY(0px);
-  box-shadow: 0 0 0 rgba(0, 0, 0, 0.2);
-  opacity: 1;
-}
-
-.pw-body {
-  padding: 2px 1rem;
+  text-align: center;
+  font-size: 1.2rem;
+  border-radius: 0.6rem;
+  margin-bottom: 1rem;
+  border: 3px var(--pale-blue) solid;
 }
 
 .form-control {
@@ -1343,41 +1340,47 @@ button:active {
   color: #142834;
 }
 
-.generate {
-  display: block;
-  background-color: deepskyblue;
-  color: #142834;
+.contact-button {
+  padding: 0.4rem 0.6rem;
+  text-align: center;
+  margin: 1rem 0 1.5rem 65%;
+  width: 30%;
+  letter-spacing: 2px;
+  color: var(--off-white);
   font-weight: bold;
-  padding: 1.5rem;
-  font-size: 1.5rem;
-  border: none;
-  cursor: pointer;
-  transition: all 0.2s;
-  width: 99%;
-  margin: 2.5rem auto 1.5rem;
-  letter-spacing: 1px;
-  border-radius: 5px;
-}
-
-.generate:hover {
-  transform: translateY(-2px);
-}
-.generate:active {
-  transform: translateY(0px);
+  font-family: poppins;
+  border: 3px var(--pale-blue) solid;
 }
 
 input {
-  background-color: #4588b4;
+  background-color: var(--paler-blue);
   outline: none;
   border: none;
   border-radius: 5px;
 }
 
 label {
-  color: #4588b4;
+  color: var(--paler-blue);
 }
-/* ABOUT PAGE */
-/* ABOUT PAGE */
+
+/* ERROR PAGE */
+.error-svg {
+  width: 80%;
+  position: absolute;
+  left: 10%;
+  top: -20vh;
+}
+
+.error-heading {
+  text-align: center;
+}
+
+.error-btn {
+  position: relative;
+  top: 15vh;
+  left: 36vw;
+  border: 5px var(--medium-blue) solid;
+}
 /********************************************/
 
 @media screen and (min-width: 676px) {
@@ -1391,16 +1394,20 @@ label {
     grid-template-columns: 200px 1fr;
     column-gap: 4rem;
   }
+
   .btn-container {
     flex-direction: column;
     justify-content: flex-start;
   }
+
   .tech-btn {
     margin-bottom: 1rem;
   }
+
   .active-btn {
     box-shadow: -2px 0 var(--clr-primary-5);
   }
+
   .tech-btn:hover {
     box-shadow: -2px 0 var(--clr-primary-5);
   }
@@ -1426,6 +1433,7 @@ label {
   body {
     font-size: 1rem;
   }
+
   .boat {
     bottom: 20%;
     left: 0%;
