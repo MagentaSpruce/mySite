@@ -2,7 +2,7 @@
   "name": "magentaspruce",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://magentaspruce.github.io/",
+  "homepage": "https://magentaspruce.github.io/mySite/",
   "dependencies": {
     "@material-ui/core": "^4.12.1",
     "@testing-library/jest-dom": "^5.11.4",
@@ -18,6 +18,7 @@
     "react-scripts": "4.0.3",
     "react-snowfall": "^1.1.0",
     "react-wavify": "^1.5.2",
+    "tsparticles": "^1.31.1",
     "web-vitals": "^1.0.1"
   },
   "scripts": {

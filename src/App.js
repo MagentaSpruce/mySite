@@ -15,7 +15,7 @@ import AboutPhoto from "./AboutPhoto";
 
 function App() {
   return (
-    <Router>
+    <Router basename="/mySite">
       <main>
         <Switch>
           <Route exact path="/">
