@@ -111,6 +111,7 @@ const Sidebar = () => {
       </ul>
       <GiShoonerSailboat className="boat" />
       <Wave
+        className="set-wave"
         fill="url(#548CA8)"
         paused={false}
         options={{

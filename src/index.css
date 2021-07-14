@@ -108,7 +108,7 @@ main {
 }
 
 .sidebar-toggle:hover {
-  color: var(--off-white);
+  color: magenta;
 }
 
 .sidebar-toggle:active {
@@ -165,7 +165,7 @@ main {
   position: relative;
   top: 1.8vh;
   right: 9vw;
-  animation: take-off 2.5s cubic-bezier(1, -0.14, 1, 1) 3s 1;
+  animation: take-off 2.5s cubic-bezier(1, -0.14, 1, 1) 2s 1;
   animation-timing-function: linear;
   overflow: hidden;
 }
@@ -645,17 +645,26 @@ main {
 @keyframes sail {
   0% {
     bottom: 8%;
-    left: -30vw;
-    transform: translateY(0.7rem) rotate(15deg);
+    left: -30%;
+    transform: translateY(1.2rem) rotate(15deg);
   }
 
-  15% {
-    transform: translateY(1.2rem) rotate(15deg);
+  10% {
+    transform: translateY(1.5rem) rotate(10deg);
+    bottom: 11%;
+  }
+  20% {
+    transform: translateY(1.7rem) rotate(7deg);
     bottom: 11%;
   }
 
   35% {
-    transform: translateY(0.15rem) rotate(-10deg);
+    transform: translateY(1.2rem) rotate(-10deg);
+    bottom: 10%;
+  }
+
+  50% {
+    transform: translateY(0.5rem) rotate(-10deg);
     bottom: 10%;
   }
 
@@ -663,9 +672,13 @@ main {
     transform: translateY(-0.35rem) rotate(10deg);
     bottom: 8%;
   }
+  85% {
+    transform: translateY(0.4rem) rotate(0deg);
+    bottom: 8%;
+  }
 
   100% {
-    transform: translateY(-1.2rem) rotate(-10deg);
+    transform: translateY(-1rem) rotate(-10deg);
     bottom: 6%;
     left: 99vw;
   }
@@ -1413,6 +1426,122 @@ label {
   border: 5px var(--medium-blue) solid;
 }
 /********************************************/
+@media screen and (max-width: 375px) {
+  .contact-header {
+    font-size: 1.5rem;
+    padding: 0 1rem;
+  }
+
+  .contact-form-header {
+    font-size: 1.5rem;
+  }
+
+  .contact-form-label-top {
+    font-size: 1rem;
+  }
+
+  .contact-inputbox-label {
+    font-size: 1rem;
+  }
+
+  .contact-button {
+    margin: 0 0 1rem 65%;
+  }
+
+  .card-element {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .waves {
+    position: absolute;
+    bottom: -17%;
+    z-index: 100;
+  }
+
+  .set-wave {
+    position: relative;
+    top: -11.5vh;
+    z-index: -10;
+  }
+
+  .links a {
+    font-size: 2rem;
+  }
+
+  .social-icons {
+    top: -10vh;
+  }
+
+  .modal-container {
+    height: 60vh;
+  }
+
+  .sprucey {
+    top: -19vh;
+    right: 3vw;
+  }
+
+  .modal-heading {
+    font-size: 1.8rem;
+  }
+
+  .fighter-jet {
+    right: 11vw;
+    top: 2vh;
+  }
+
+  .barracks {
+    bottom: 13vh;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .contact-header {
+    font-size: 1.5rem;
+    padding: 0 1rem;
+  }
+
+  .contact-form-header {
+    font-size: 1.5rem;
+  }
+
+  .barracks {
+    bottom: 12vh;
+  }
+
+  .fighter-jet {
+    right: 10vw;
+    top: 2vh;
+  }
+
+  .modal-container {
+    height: 60vh;
+  }
+
+  .set-wave {
+    position: relative;
+    top: -6.5vh;
+    z-index: -10;
+  }
+
+  .links a {
+    font-size: 2rem;
+  }
+
+  .social-icons {
+    top: -9vh;
+  }
+
+  .sprucey {
+    top: -19vh;
+    right: 3vw;
+  }
+
+  .modal-heading {
+    font-size: 1.8rem;
+  }
+}
 
 @media screen and (min-width: 676px) {
   .sidebar {
@@ -1482,30 +1611,115 @@ label {
 
   @keyframes sail {
     0% {
-      bottom: 15%;
+      bottom: 0;
       left: -10vw;
-      transform: translateY() rotate(20deg);
+      transform: translateY(0rem) rotate(0deg);
     }
 
     15% {
-      transform: translateY(1rem) rotate(-10deg);
-      bottom: 12%;
+      transform: translateY(2.8rem) rotate(12deg);
+      bottom: 15%;
     }
 
     35% {
-      transform: translateY(0.5rem) rotate(15deg);
-      bottom: 9%;
+      transform: translateY(1.1rem) rotate(-10deg);
+      bottom: 10%;
     }
 
     65% {
-      transform: translateY(-1rem) rotate(-15deg);
+      transform: translateY(-1.6rem) rotate(10deg);
       bottom: 7%;
     }
 
     100% {
-      transform: translateY(0.3rem) rotate(15deg);
-      bottom: 9%;
+      transform: translateY(0.8rem) rotate(-15deg);
+      bottom: 10%;
       left: 100%;
     }
+  }
+
+  .cards-container {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 5rem;
+  }
+
+  .treasure-chest {
+    font-size: 24rem;
+  }
+
+  .works {
+    width: 40%;
+  }
+
+  .fan-icon {
+    left: 42.5%;
+  }
+
+  .modal-heading {
+    left: 0;
+    top: 0;
+  }
+
+  .card-picture-2 {
+    width: 90%;
+    position: relative;
+    left: 1.5vw;
+  }
+
+  .card-picture-3 {
+    width: 90%;
+    position: relative;
+    left: 1.5vw;
+  }
+
+  .card-element {
+    height: fit-content;
+  }
+
+  .info {
+    padding: 1.5rem 0;
+  }
+
+  .about-me {
+    width: 80%;
+    border: none;
+  }
+
+  .about-p {
+    padding: 0 1.5rem;
+  }
+
+  .about-img {
+    width: 22vw;
+    margin-top: 0;
+    margin-left: 28%;
+  }
+
+  .img-icons-container {
+    margin-bottom: 5vh;
+    margin-left: 2vw;
+  }
+
+  .fighter-jet {
+    font-size: 2rem;
+    right: 3.3vw;
+  }
+
+  .error-svg {
+    width: 40%;
+    left: 30vw;
+    padding-bottom: 5vh;
+    top: -10vh;
+  }
+
+  .error-btn {
+    position: relative;
+    left: 40%;
+  }
+
+  .error-heading {
+    position: relative;
+    top: 12vh;
   }
 }

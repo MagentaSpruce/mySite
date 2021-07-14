@@ -26,147 +26,161 @@ export default function MediaCard() {
     <>
       <h2 className="card-title">Featured Projects</h2>
       <div className="underline"></div>
-      <Card classes={{ root: "card-element" }} className={classes.root}>
-        <CardActionArea classes={{ root: "card-element-background" }}>
-          <CardMedia
-            classes={{ root: "card-picture-1" }}
-            className={classes.media}
-            image="./nettlesLogo.png"
-            title="Nettle's Herbs Logo"
-          />
+      <div className="cards-container">
+        <Card classes={{ root: "card-element" }} className={classes.root}>
+          <CardActionArea classes={{ root: "card-element-background" }}>
+            <CardMedia
+              classes={{ root: "card-picture-1" }}
+              className={classes.media}
+              image="./nettlesLogo.png"
+              title="Nettle's Herbs Logo"
+            />
 
-          <CardContent>
-            <Typography
-              classes={{ root: "card-header-text" }}
-              gutterBottom
-              variant="h5"
-              component="h2"
+            <CardContent>
+              <Typography
+                classes={{ root: "card-header-text" }}
+                gutterBottom
+                variant="h5"
+                component="h2"
+              >
+                Nettle's Herbs | 2021
+              </Typography>
+              <Typography
+                classes={{ root: "card-body-text" }}
+                variant="body2"
+                color="textSecondary"
+                component="p"
+              >
+                A complete business website for a local company in Jacksonville,
+                FL. Fully built out with a custom API built using NodeJS with
+                Express. Front end Javascript with MongoDB and mongoose for data
+                storage. Stripe for payments, nodemailer for emails.
+              </Typography>
+            </CardContent>
+          </CardActionArea>
+          <CardActions classes={{ root: "card-footer" }}>
+            <Button
+              classes={{ root: "card-footer-icon1" }}
+              size="small"
+              color="primary"
+              href="https://github.com/MagentaSpruce/nettlesHerbs"
             >
-              Nettle's Herbs | 2021
-            </Typography>
-            <Typography
-              classes={{ root: "card-body-text" }}
-              variant="body2"
-              color="textSecondary"
-              component="p"
+              <RiGithubLine alt="view the source code" />
+            </Button>
+            <Button
+              classes={{ root: "card-footer-icon" }}
+              size="small"
+              color="primary"
+              href="https://nettles-herbs.herokuapp.com/home"
             >
-              A complete business website for a local company in Jacksonville,
-              FL. Fully built out with a custom API built using NodeJS with
-              Express. Front end Javascript with MongoDB and mongoose for data
-              storage. Stripe for payments, nodemailer for emails.
-            </Typography>
-          </CardContent>
-        </CardActionArea>
-        <CardActions classes={{ root: "card-footer" }}>
-          <Button
-            classes={{ root: "card-footer-icon1" }}
-            size="small"
-            color="primary"
-          >
-            <RiGithubLine alt="view the source code" />
-          </Button>
-          <Button
-            classes={{ root: "card-footer-icon" }}
-            size="small"
-            color="primary"
-          >
-            See for yourself! &rarr;
-          </Button>
-        </CardActions>
-      </Card>
-      <Card classes={{ root: "card-element" }} className={classes.root}>
-        <CardActionArea classes={{ root: "card-element-background" }}>
-          <CardMedia
-            classes={{ root: "card-picture-2" }}
-            className={classes.media}
-            image="./bnLogo.png"
-            title="Contemplative Reptile"
-          />
+              See for yourself! &rarr;
+            </Button>
+          </CardActions>
+        </Card>
+        <Card classes={{ root: "card-element" }} className={classes.root}>
+          <CardActionArea classes={{ root: "card-element-background" }}>
+            <CardMedia
+              classes={{ root: "card-picture-2" }}
+              className={classes.media}
+              image="./bnLogo.png"
+              title="Contemplative Reptile"
+            />
 
-          <CardContent>
-            <Typography
-              classes={{ root: "card-header-text" }}
-              gutterBottom
-              variant="h5"
-              component="h2"
+            <CardContent>
+              <Typography
+                classes={{ root: "card-header-text" }}
+                gutterBottom
+                variant="h5"
+                component="h2"
+              >
+                Hot in the Biscuit | 2021
+              </Typography>
+              <Typography
+                classes={{ root: "card-body-text" }}
+                variant="body2"
+                color="textSecondary"
+                component="p"
+              >
+                A multi-page front-end business website for a local American
+                breakfast & lunch cafe in Koh Samui, Thailand. Built with HTML,
+                CSS and vanilla JavaScript only. This site utilizes a Custom
+                design with multiple media embeddings and full media
+                responsiveness. Connected to local food delivery services via
+                API.
+              </Typography>
+            </CardContent>
+          </CardActionArea>
+          <CardActions classes={{ root: "card-footer" }}>
+            <Button
+              classes={{ root: "card-footer-icon1" }}
+              size="small"
+              color="primary"
+              href="https://github.com/TrissNepps/hotinthebiscuitsamui"
             >
-              Hot in the Biscuit | 2021
-            </Typography>
-            <Typography
-              classes={{ root: "card-body-text" }}
-              variant="body2"
-              color="textSecondary"
-              component="p"
+              <RiGithubLine alt="view the source code" />
+            </Button>
+            <Button
+              classes={{ root: "card-footer-icon" }}
+              size="small"
+              color="primary"
+              href="https://www.hotinthebiscuit.com/"
             >
-              A multi-page front-end business website for a local company in Koh
-              Samui, Thailand. Custom design with multiple media embeddings.
-            </Typography>
-          </CardContent>
-        </CardActionArea>
-        <CardActions classes={{ root: "card-footer" }}>
-          <Button
-            classes={{ root: "card-footer-icon1" }}
-            size="small"
-            color="primary"
-          >
-            <RiGithubLine alt="view the source code" />
-          </Button>
-          <Button
-            classes={{ root: "card-footer-icon" }}
-            size="small"
-            color="primary"
-          >
-            See for yourself! &rarr;
-          </Button>
-        </CardActions>
-      </Card>
-      <Card classes={{ root: "card-element" }} className={classes.root}>
-        <CardActionArea classes={{ root: "card-element-background" }}>
-          <CardMedia
-            classes={{ root: "card-picture-3" }}
-            className={classes.media}
-            image="./nettlesLogo.png"
-            title="Contemplative Reptile"
-          />
+              See for yourself! &rarr;
+            </Button>
+          </CardActions>
+        </Card>
+        <Card classes={{ root: "card-element" }} className={classes.root}>
+          <CardActionArea classes={{ root: "card-element-background" }}>
+            <CardMedia
+              classes={{ root: "card-picture-3" }}
+              className={classes.media}
+              image="./nettlesLogo.png"
+              title="Contemplative Reptile"
+            />
 
-          <CardContent>
-            <Typography
-              classes={{ root: "card-header-text" }}
-              gutterBottom
-              variant="h5"
-              component="h2"
+            <CardContent>
+              <Typography
+                classes={{ root: "card-header-text" }}
+                gutterBottom
+                variant="h5"
+                component="h2"
+              >
+                Forkify | 2021
+              </Typography>
+              <Typography
+                classes={{ root: "card-body-text" }}
+                variant="body2"
+                color="textSecondary"
+                component="p"
+              >
+                A completely interactive desktop-only recipe application which
+                utilizes a public API in order to access user recipe search
+                request and render back the ingredients and cooking
+                instructions. This webpage was built using HTML, SASS, and
+                vanilla JavaScript but has not been made mobile responsive.
+              </Typography>
+            </CardContent>
+          </CardActionArea>
+          <CardActions classes={{ root: "card-footer" }}>
+            <Button
+              classes={{ root: "card-footer-icon1" }}
+              size="small"
+              color="primary"
+              href="https://github.com/MagentaSpruce/forkifyApp"
             >
-              Forkify | 2021
-            </Typography>
-            <Typography
-              classes={{ root: "card-body-text" }}
-              variant="body2"
-              color="textSecondary"
-              component="p"
+              <RiGithubLine alt="view the source code" />
+            </Button>
+            <Button
+              classes={{ root: "card-footer-icon" }}
+              size="small"
+              color="primary"
+              href="https://forkify-spruce.netlify.app/"
             >
-              A completely interactive recipe application which utilizes a
-              public API in order to access user recipe search request and
-              render back the ingredients and cooking instructions.
-            </Typography>
-          </CardContent>
-        </CardActionArea>
-        <CardActions classes={{ root: "card-footer" }}>
-          <Button
-            classes={{ root: "card-footer-icon1" }}
-            size="small"
-            color="primary"
-          >
-            <RiGithubLine alt="view the source code" />
-          </Button>
-          <Button
-            classes={{ root: "card-footer-icon" }}
-            size="small"
-            color="primary"
-          >
-            See for yourself! &rarr;
-          </Button>
-        </CardActions>
-      </Card>
+              See for yourself! &rarr;
+            </Button>
+          </CardActions>
+        </Card>
+      </div>
     </>
   );
 }

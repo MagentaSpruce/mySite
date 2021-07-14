@@ -41,7 +41,7 @@ const Modal = () => {
       setHeader1("");
       setHeader2("Fixed it 😎");
       setModalBodyText(
-        "What? You thought I didn't know what I was doing or something? I went to university."
+        "What? You thought I didn't know what I was doing or something? I went to university!"
       );
       setPhoto(profilePic);
     } else if (value === "✅") {
