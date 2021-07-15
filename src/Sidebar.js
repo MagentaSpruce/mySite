@@ -89,10 +89,10 @@ const Sidebar = () => {
           const { url, text, icon, id } = link;
           return (
             <li key={id}>
-              <Link to={url}>
+              <a href={url}>
                 {icon}
                 {text}
-              </Link>
+              </a>
             </li>
           );
         })}
@@ -112,7 +112,7 @@ const Sidebar = () => {
       </ul>
       <GiShoonerSailboat className="boat" />
       <Wave
-        className="waves"
+        className="wave"
         fill="url(#548CA8)"
         paused={false}
         options={{

@@ -18,8 +18,15 @@ function App() {
   return (
     <Router>
       <main>
-        <Link to="/">Home</Link> <Link to={{ pathname: "/about" }}>About</Link>{" "}
-        <Link to="/contact">Contact</Link>
+        <Link className="page-links" to="/">
+          Home
+        </Link>{" "}
+        <Link className="page-links" to={{ pathname: "/about" }}>
+          About
+        </Link>{" "}
+        <Link className="page-links" to="/contact">
+          Contact
+        </Link>
         <Switch>
           <Route exact path="/" component={Home}>
             <Home />
