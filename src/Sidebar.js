@@ -89,7 +89,7 @@ const Sidebar = () => {
       </div>
       <ul className="links">
         <li>
-          <Link to="/">
+          <Link to="/mysite">
             <GiWoodCabin />
             main lodge
           </Link>

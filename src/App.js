@@ -12,7 +12,6 @@ import Extras from "./Extras";
 import Footer from "./Footer";
 import AboutBio from "./AboutBio";
 import AboutPhoto from "./AboutPhoto";
-import { Link } from "react-router-dom";
 
 function App() {
   return (
@@ -28,7 +27,7 @@ function App() {
           Contact
         </Link> */}
         <Switch>
-          <Route exact path="/" component={Home}>
+          <Route path="/mysite">
             <Home />
             <Sidebar />
             <Modal />
@@ -37,14 +36,14 @@ function App() {
             <Extras />
             <Footer />
           </Route>
-          <Route path="/about" component={About}>
+          <Route path="/about">
             <About />
             <Sidebar />
             <AboutBio />
             <AboutPhoto />
             <Footer className="about-footer" />
           </Route>
-          <Route path="/contact" component={Contact}>
+          <Route path="/contact">
             <Contact />
             <Sidebar />
           </Route>
