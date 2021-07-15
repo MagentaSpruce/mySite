@@ -1,5 +1,5 @@
 import React from "react";
-import { links, social } from "./data";
+import { social } from "./data";
 import { useGlobalContext } from "./Context";
 import Snowfall from "react-snowfall";
 import Wave from "react-wavify";
@@ -89,7 +89,7 @@ const Sidebar = () => {
       </div>
       <ul className="links">
         <li>
-          <Link to="/mysite">
+          <Link to="/">
             <GiWoodCabin />
             main lodge
           </Link>
