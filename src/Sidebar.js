@@ -89,19 +89,19 @@ const Sidebar = () => {
       </div>
       <ul className="links">
         <li>
-          <Link to="/">
+          <Link to="/" onClick={closeSidebar}>
             <GiWoodCabin />
             main lodge
           </Link>
         </li>
         <li>
-          <Link to={{ pathname: "/about" }}>
+          <Link to={{ pathname: "/about" }} onClick={closeSidebar}>
             <GiSpyglass />
             Learn More
           </Link>
         </li>
         <li>
-          <Link to="/contact">
+          <Link to="/contact" onClick={closeSidebar}>
             <GiSmartphone />
             Say Hello
           </Link>

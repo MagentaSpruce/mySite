@@ -1463,6 +1463,12 @@ label {
     z-index: 100;
   }
 
+  .wave {
+    position: relative;
+    top: -9vh;
+    z-index: -10;
+  }
+
   .set-wave {
     position: relative;
     top: -11.5vh;
