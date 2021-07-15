@@ -12,13 +12,16 @@ import Extras from "./Extras";
 import Footer from "./Footer";
 import AboutBio from "./AboutBio";
 import AboutPhoto from "./AboutPhoto";
+import { Link } from "react-router-dom";
 
 function App() {
   return (
-    <Router basename="/mySite">
+    <Router>
       <main>
+        <Link to="/">Home</Link> <Link to={{ pathname: "/about" }}>About</Link>{" "}
+        <Link to="/contact">Contact</Link>
         <Switch>
-          <Route exact path="/">
+          <Route exact path="/" component={Home}>
             <Home />
             <Sidebar />
             <Modal />
@@ -27,14 +30,14 @@ function App() {
             <Extras />
             <Footer />
           </Route>
-          <Route path="/about">
+          <Route path="/about" component={About}>
             <About />
             <Sidebar />
             <AboutBio />
             <AboutPhoto />
             <Footer className="about-footer" />
           </Route>
-          <Route path="/contact">
+          <Route path="/contact" component={Contact}>
             <Contact />
             <Sidebar />
           </Route>

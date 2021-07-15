@@ -4,6 +4,7 @@ import { useGlobalContext } from "./Context";
 import Snowfall from "react-snowfall";
 import Wave from "react-wavify";
 import { GiShoonerSailboat } from "react-icons/gi";
+import { Link } from "react-router-dom";
 
 const Sidebar = () => {
   const { isSidebarOpen, closeSidebar } = useGlobalContext();
@@ -88,10 +89,10 @@ const Sidebar = () => {
           const { url, text, icon, id } = link;
           return (
             <li key={id}>
-              <a href={url}>
+              <Link to={url}>
                 {icon}
                 {text}
-              </a>
+              </Link>
             </li>
           );
         })}
