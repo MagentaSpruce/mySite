@@ -5,14 +5,15 @@ import App from "./App";
 import { AppProvider } from "./Context";
 import reportWebVitals from "./reportWebVitals";
 import BrowserRouter from "react-router-dom/BrowserRouter";
+import { HashRouter } from "react-router-dom";
 
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
+    <HashRouter basename={process.env.PUBLIC_URL}>
       <AppProvider>
         <App />
       </AppProvider>
-    </BrowserRouter>
+    </HashRouter>
   </React.StrictMode>,
   document.getElementById("root")
 );
