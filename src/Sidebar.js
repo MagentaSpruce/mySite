@@ -89,10 +89,10 @@ const Sidebar = () => {
           const { url, text, icon, id } = link;
           return (
             <li key={id}>
-              <a href={url}>
+              <Link to={url}>
                 {icon}
                 {text}
-              </a>
+              </Link>
             </li>
           );
         })}
