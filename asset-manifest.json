@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/mysite/static/css/main.d2853ea0.chunk.css",
+    "main.css": "/mysite/static/css/main.67a94df7.chunk.css",
     "main.js": "/mysite/static/js/main.6fa6cb5c.chunk.js",
     "main.js.map": "/mysite/static/js/main.6fa6cb5c.chunk.js.map",
     "runtime-main.js": "/mysite/static/js/runtime-main.aab4c95f.js",
@@ -10,7 +10,7 @@
     "static/js/3.ec4c4a05.chunk.js": "/mysite/static/js/3.ec4c4a05.chunk.js",
     "static/js/3.ec4c4a05.chunk.js.map": "/mysite/static/js/3.ec4c4a05.chunk.js.map",
     "index.html": "/mysite/index.html",
-    "static/css/main.d2853ea0.chunk.css.map": "/mysite/static/css/main.d2853ea0.chunk.css.map",
+    "static/css/main.67a94df7.chunk.css.map": "/mysite/static/css/main.67a94df7.chunk.css.map",
     "static/js/2.2a290baa.chunk.js.LICENSE.txt": "/mysite/static/js/2.2a290baa.chunk.js.LICENSE.txt",
     "static/media/index.css": "/mysite/static/media/sky.dd882097.jpg",
     "static/media/bubble.5abfb2f4.png": "/mysite/static/media/bubble.5abfb2f4.png",
@@ -20,7 +20,7 @@
   "entrypoints": [
     "static/js/runtime-main.aab4c95f.js",
     "static/js/2.2a290baa.chunk.js",
-    "static/css/main.d2853ea0.chunk.css",
+    "static/css/main.67a94df7.chunk.css",
     "static/js/main.6fa6cb5c.chunk.js"
   ]
 }
