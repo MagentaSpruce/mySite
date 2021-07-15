@@ -796,8 +796,8 @@ svg:active {
   height: 40vh !important;
   content: "";
   display: block;
-  margin: 5vh auto 0 auto;
-  width: 80%;
+  margin: 2vh auto 0 auto;
+  width: 85%;
   padding-top: 2vh;
   border: 3px solid var(--dark-blue);
 }
@@ -805,15 +805,24 @@ svg:active {
 .card-picture-2 {
   background-image: url("./bonnie.png") !important;
   height: 40vh !important;
-  background-size: contain !important;
-  margin: 1rem 0 0 0 !important;
+  background-size: fill !important;
+
+  margin: 1rem auto 0 auto !important;
+  width: 88%;
+
+  border: 3px solid var(--dark-blue);
 }
 
 .card-picture-3 {
-  background-image: url("./forkifyIcon.png") !important;
+  background-image: url("./natours.png") !important;
   height: 40vh !important;
   background-size: contain !important;
-  margin: 1rem 0 0 0 !important;
+  margin: 1rem auto 0 auto !important;
+  width: 85%;
+  position: relative;
+  right: 0vw;
+  background-color: var(--off-white);
+  border: 3px solid var(--dark-blue);
 }
 
 .card-header-text {
@@ -1436,6 +1445,10 @@ label {
     padding: 0 1rem;
   }
 
+  .card-picture-2 {
+    width: 84%;
+  }
+
   .contact-form-header {
     font-size: 1.5rem;
   }
@@ -1484,7 +1497,7 @@ label {
   }
 
   .modal-container {
-    height: 60vh;
+    height: 65vh;
   }
 
   .sprucey {
@@ -1494,6 +1507,7 @@ label {
 
   .modal-heading {
     font-size: 1.8rem;
+    top: 5vh;
   }
 
   .fighter-jet {
@@ -1526,7 +1540,7 @@ label {
   }
 
   .modal-container {
-    height: 60vh;
+    height: 65vh;
   }
 
   .set-wave {
@@ -1550,6 +1564,7 @@ label {
 
   .modal-heading {
     font-size: 1.8rem;
+    top: 4vh;
   }
 }
 
@@ -1580,6 +1595,10 @@ label {
 
   .tech-btn:hover {
     box-shadow: -2px 0 var(--clr-primary-5);
+  }
+
+  .modal-heading {
+    top: 4vh;
   }
 }
 
@@ -1672,15 +1691,16 @@ label {
   }
 
   .card-picture-2 {
-    width: 90%;
+    width: 89%;
     position: relative;
-    left: 1.5vw;
+    margin: 1rem auto 0 auto;
+    border: 3px solid var(--dark-blue);
   }
 
   .card-picture-3 {
     width: 90%;
     position: relative;
-    left: 1.5vw;
+    left: 0;
   }
 
   .card-element {
@@ -1731,5 +1751,14 @@ label {
   .error-heading {
     position: relative;
     top: 12vh;
+  }
+
+  .card-footer-icon {
+    color: var(--off-white) !important;
+    left: 1vw;
+  }
+  .card-footer-icon1 {
+    color: var(--off-white) !important;
+    font-size: 1.3rem !important;
   }
 }

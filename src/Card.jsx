@@ -145,7 +145,7 @@ export default function MediaCard() {
                 variant="h5"
                 component="h2"
               >
-                Forkify | 2021
+                Natours | 2021
               </Typography>
               <Typography
                 classes={{ root: "card-body-text" }}
@@ -153,11 +153,11 @@ export default function MediaCard() {
                 color="textSecondary"
                 component="p"
               >
-                A completely interactive desktop-only recipe application which
-                utilizes a public API in order to access user recipe search
-                request and render back the ingredients and cooking
-                instructions. This webpage was built using HTML, SASS, and
-                vanilla JavaScript but has not been made mobile responsive.
+                A completely responsive webpage created for a fictitious travel
+                company. This webpage was built using purely HTML, CSS &
+                SASS.The sites construction uses pre CSS flex-box and grid
+                methods yet still renders the same amazing results. This was a
+                private project done only for learning purposes.
               </Typography>
             </CardContent>
           </CardActionArea>
@@ -166,7 +166,7 @@ export default function MediaCard() {
               classes={{ root: "card-footer-icon1" }}
               size="small"
               color="primary"
-              href="https://github.com/MagentaSpruce/forkifyApp"
+              href="https://github.com/MagentaSpruce/natours"
             >
               <RiGithubLine alt="view the source code" />
             </Button>
@@ -174,7 +174,7 @@ export default function MediaCard() {
               classes={{ root: "card-footer-icon" }}
               size="small"
               color="primary"
-              href="https://forkify-spruce.netlify.app/"
+              href="https://magentaspruce.github.io/natours/"
             >
               See for yourself! &rarr;
             </Button>

@@ -89,7 +89,7 @@ const Sidebar = () => {
       </div>
       <ul className="links">
         <li>
-          <Link to="/" onClick={closeSidebar}>
+          <Link to="/mysite" onClick={closeSidebar}>
             <GiWoodCabin />
             main lodge
           </Link>
@@ -102,7 +102,7 @@ const Sidebar = () => {
         </li>
         <li>
           <Link to="/contact" onClick={closeSidebar}>
-            <GiSmartphone />
+            <GiSmartphone className="phone-icon" />
             Say Hello
           </Link>
         </li>

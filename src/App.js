@@ -27,7 +27,7 @@ function App() {
           Contact
         </Link> */}
         <Switch>
-          <Route exact path="/">
+          <Route exact path="/mysite">
             <Home />
             <Sidebar />
             <Modal />
