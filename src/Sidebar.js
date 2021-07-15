@@ -5,6 +5,9 @@ import Snowfall from "react-snowfall";
 import Wave from "react-wavify";
 import { GiShoonerSailboat } from "react-icons/gi";
 import { Link } from "react-router-dom";
+import { FiTwitter } from "react-icons/fi";
+import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
+import { GiSpyglass, GiWoodCabin, GiSmartphone } from "react-icons/gi";
 
 const Sidebar = () => {
   const { isSidebarOpen, closeSidebar } = useGlobalContext();
@@ -85,17 +88,24 @@ const Sidebar = () => {
         </svg>
       </div>
       <ul className="links">
-        {links.map((link) => {
-          const { url, text, icon, id } = link;
-          return (
-            <li key={id}>
-              <Link to={url}>
-                {icon}
-                {text}
-              </Link>
-            </li>
-          );
-        })}
+        <li>
+          <Link to="/">
+            <GiWoodCabin />
+            main lodge
+          </Link>
+        </li>
+        <li>
+          <Link to={{ pathname: "/about" }}>
+            <GiSpyglass />
+            Learn More
+          </Link>
+        </li>
+        <li>
+          <Link to="/contact">
+            <GiSmartphone />
+            Say Hello
+          </Link>
+        </li>
       </ul>
       <div style={{ height: 100, width: 100, background: "transparent" }}>
         <Snowfall snowflakeCount={80} />

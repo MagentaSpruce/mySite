@@ -4,7 +4,6 @@ import { GiYinYang, GiBarracks } from "react-icons/gi";
 import { FaFighterJet } from "react-icons/fa";
 import { useGlobalContext } from "./Context";
 import Particle from "./Particle";
-import { Link } from "react-router-dom";
 
 const Home = () => {
   const { openSidebar, openModal } = useGlobalContext();
