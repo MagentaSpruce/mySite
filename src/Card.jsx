@@ -50,11 +50,11 @@ export default function MediaCard() {
                 variant="body2"
                 color="textSecondary"
                 component="p"
-              >
-                A complete business website for a local company in Jacksonville,
-                FL. Fully built out with a custom API built using NodeJS with
+              >***This site is not yet life - still waiting on final content***
+                ***Waiting for Heroku to assist with styles issue - please view on desktop or use google dev to view mobile***
+                I built this for my sister who is starting a business. It is a fully built website with a custom API built using NodeJS on
                 Express. Front end Javascript with MongoDB and mongoose for data
-                storage. Stripe for payments, nodemailer for emails.
+                storage. Stripe for payments, nodemailer for emails. 
               </Typography>
             </CardContent>
           </CardActionArea>
