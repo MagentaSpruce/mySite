@@ -69,8 +69,8 @@ export default function MediaCard() {
                 business. It's fully built out with a custom API using NodeJS
                 with Express on the server side along with MongoDB for data
                 storage. Client side uses Javascript with Stripe for payments &
-                nodemailer for emails. It is waiting on final content from sis
-                but otherwise is fully functional. =======
+                nodemailer for emails. It is only waiting on final content from
+                sis.
               </Typography>
             </CardContent>
           </CardActionArea>
@@ -126,7 +126,6 @@ export default function MediaCard() {
                 owned until COVID. Constructed with HTML, CSS and vanilla
                 JavaScript only. This site utilizes a Custom design with
                 multiple media embeddings and full media responsiveness.
-                Connected to local food delivery services via API.
               </Typography>
             </CardContent>
           </CardActionArea>
@@ -169,7 +168,7 @@ export default function MediaCard() {
                 variant="h5"
                 component="h2"
               >
-                Natours | 2021
+                GitUsers | 2021
               </Typography>
               <Typography
                 classes={{ root: "card-body-text" }}
@@ -177,12 +176,11 @@ export default function MediaCard() {
                 color="textSecondary"
                 component="p"
               >
-                A completely responsive webpage created for a fictitious travel
-                company. This webpage was built using purely HTML, CSS & SASS.
-                The sites construction uses pre CSS flex-box and grid methods
-                yet still renders the same amazing results as a grid/flex-box
-                layout does. This was a private project done only for learning
-                purposes.
+                A completely responsive SPA for fetching and displaying user
+                data from the GitHub API. This application was built using
+                React. The sites construction uses Auth0 for login and
+                authentication as well as fusion charts for data display. This
+                was a private project done only for learning purposes.
               </Typography>
             </CardContent>
           </CardActionArea>
@@ -191,7 +189,7 @@ export default function MediaCard() {
               classes={{ root: "card-footer-icon1" }}
               size="small"
               color="primary"
-              href="https://github.com/MagentaSpruce/natours"
+              href="https://github.com/MagentaSpruce/reactGitHubUserData"
             >
               <RiGithubLine alt="view the source code" />
             </Button>
@@ -199,7 +197,7 @@ export default function MediaCard() {
               classes={{ root: "card-footer-icon" }}
               size="small"
               color="primary"
-              href="https://magentaspruce.github.io/natours/"
+              href="https://react-github-user-search-sprucey.netlify.app/login"
             >
               See for yourself! &rarr;
             </Button>

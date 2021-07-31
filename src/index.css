@@ -840,15 +840,13 @@ svg:active {
 }
 
 .card-picture-3 {
-  background-image: url("./natours.png") !important;
+  background-image: url("./iconImage.png") !important;
   height: 40vh !important;
-  background-size: contain !important;
+  background-size: cover !important;
   margin: 1rem auto 0 auto !important;
-  width: 85%;
-  position: relative;
-  right: 0vw;
+
   background-color: var(--off-white);
-  border: 3px solid var(--dark-blue);
+  border: 3px solid var(--pale-blue);
 }
 
 .card-header-text {

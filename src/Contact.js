@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import emailjs from "emailjs-com";
 import Particle from "./Particle";
 
@@ -7,6 +7,9 @@ import { useGlobalContext } from "./Context";
 
 const Contact = () => {
   const { openSidebar, openModal } = useGlobalContext();
+  // const [name, setName] = useState("");
+  // const [email, setEmail] = useState("");
+  // const [mesaage, setMessage] = useState("");
   function sendEmail(e) {
     e.preventDefault();
 
@@ -18,10 +21,12 @@ const Contact = () => {
         "user_VOjAjHBHYyuc9oglCHwdz"
       )
       .then((res) => {
+        window.location.href = "/";
         console.log(res);
       })
       .catch((err) => console.log(err));
   }
+
   return (
     <>
       <Particle />
