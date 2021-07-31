@@ -62,6 +62,7 @@ export default function MediaCard() {
                 variant="body2"
                 color="textSecondary"
                 component="p"
+                HEAD
               >
                 {" "}
                 I built this website for my sister who is starting her own
@@ -69,7 +70,7 @@ export default function MediaCard() {
                 with Express on the server side along with MongoDB for data
                 storage. Client side uses Javascript with Stripe for payments &
                 nodemailer for emails. It is waiting on final content from sis
-                but otherwise is fully functional.
+                but otherwise is fully functional. =======
               </Typography>
             </CardContent>
           </CardActionArea>
