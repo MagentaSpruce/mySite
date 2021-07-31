@@ -15,9 +15,11 @@ const AboutBio = () => {
         <br />
         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;I code in order to develop the
         skillsets to eventually design, create, and launch fin-tech applications
-        for DeFi. I started coding in 2020. Before that, and COVID, I had a
-        successful business in Thailand and attended an international medical
-        school program in Ukraine.
+        for DeFi. I currently use the MERN stack for building out projects or
+        React for SPA's. I am interested in learning about all things technical
+        and programming related. Before coding and COVID I had a successful
+        business in Thailand and attended an international medical school
+        program in Ukraine.
         <br />
         <br />
         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Living and working for many years
@@ -28,8 +30,8 @@ const AboutBio = () => {
         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Coding, like medicine, is a very
         meticulous and cerebral affair which requires constant practice and
         attention to become very good at. I myself love the challenge of
-        constantly learning new things everyday and am sincerely stoked to be on
-        such an incredibly bright and uplifting journey.
+        constantly learning new things everyday and am sincerely happy to be on
+        such an incredibly bright and uplifting journey as this one.
         <br />
         <br />
         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;I'd love to work together to make

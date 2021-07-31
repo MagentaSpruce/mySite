@@ -2,7 +2,7 @@
   "name": "magentaspruce",
   "version": "0.1.0",
   "private": false,
-  "homepage": "https://magentaspruce.github.io/mysite/",
+  "homepage": ".",
   "dependencies": {
     "@material-ui/core": "^4.12.1",
     "@testing-library/jest-dom": "^5.11.4",
@@ -25,7 +25,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "CI= react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

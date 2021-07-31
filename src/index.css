@@ -12,6 +12,22 @@
   --transition: all 0.3s linear;
 }
 
+::selection {
+  background: magenta; /* WebKit/Blink Browsers */
+}
+
+body::-webkit-scrollbar {
+  width: 1vw;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 16px rgba(0, 0, 0, 0.5);
+}
+
+body::-webkit-scrollbar-thumb {
+  background: deepskyblue;
+}
+
 *,
 *::before,
 *::after {
@@ -25,6 +41,12 @@ body {
   color: var(--off-white);
   line-height: 1.5;
   font-size: 0.875rem;
+}
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 ul {
@@ -209,9 +231,9 @@ main {
 }
 
 .sprucey {
-  width: 8rem;
+  width: 7.5rem;
   position: relative;
-  bottom: 14vh;
+  bottom: 15vh;
   border-radius: 50%;
   justify-self: baseline;
   margin: 0 1rem;
@@ -230,7 +252,10 @@ main {
 
 .modal-container {
   background: url("./flipper.jpg") no-repeat;
-  background-position-x: inherit;
+
+  background-size: cover !important;
+  /* margin: 1rem auto 0 auto !important;
+  width: 88%; */
   border-radius: 0.4rem;
   width: 90vw;
   height: 50vh;
@@ -250,8 +275,8 @@ main {
 
 .modal-heading {
   position: relative;
-  left: 11vw;
-  top: 3vh;
+  left: 11.5vw;
+  top: 4vh;
   color: var(--dark-blue);
 }
 
@@ -432,7 +457,7 @@ main {
   width: 100%;
   height: 100%;
   background: url(cloud2.png);
-  animation: cloud-animation 2800s linear infinite;
+  animation: cloud-animation 1800s linear infinite;
 }
 
 .twinkle-box {
@@ -751,6 +776,7 @@ main {
   position: relative;
   top: -2.5rem;
   grid-gap: 2.5rem;
+  z-index: 101;
 }
 
 .social-icons a {
@@ -1039,12 +1065,6 @@ svg:active {
 }
 
 .fan-icon {
-  position: relative;
-  bottom: 5vh;
-  left: 35%;
-  width: 5rem;
-  height: 5rem;
-  display: grid;
   border-radius: 50%;
   transform: translateY(25%);
   background: var(--off-white);
@@ -1056,6 +1076,8 @@ svg:active {
 
 .fan {
   color: var(--dark-blue);
+  position: relative;
+  top: 1.6vh;
 }
 
 .fan:hover {
@@ -1149,7 +1171,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 3rem;
+  font-size: 2.7rem;
   font-family: "Satisfy", cursive;
   color: #fff;
 }
@@ -1167,7 +1189,7 @@ footer {
 }
 
 .neonP {
-  animation: p 0.11s ease-in-out infinite alternate;
+  /* animation: p 0.11s ease-in-out 10s infinite alternate; */
   border: 0.2rem solid #fff;
   padding: 1rem;
   border-radius: 2rem;
@@ -1304,6 +1326,20 @@ footer {
 
 .about-icons {
   margin-left: 20vw;
+  background-color: transparent;
+  color: var(--off-white);
+  transition: var(--transition);
+}
+
+.about-icons:hover {
+  background-color: none;
+  color: var(--medium-blue);
+  transform: scale(1.1);
+}
+
+.about-icons:active {
+  background-color: none;
+  transform: scale(1);
 }
 
 @keyframes pointer {
@@ -1339,7 +1375,7 @@ footer {
 .contact-form-label-top {
   padding-right: 0.3rem;
   color: var(--pale-blue);
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-family: poppins;
 }
 
@@ -1354,7 +1390,7 @@ footer {
 
 .contact-inputbox-label {
   color: var(--pale-blue);
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-family: poppins;
 }
 
@@ -1409,6 +1445,10 @@ footer {
   box-shadow: none;
 }
 
+.contact-page {
+  margin-top: -5vh;
+}
+
 input {
   background-color: var(--paler-blue);
   outline: none;
@@ -1439,10 +1479,26 @@ label {
   border: 5px var(--medium-blue) solid;
 }
 /********************************************/
+@media screen and (max-width: 675px) {
+  .wave {
+    position: relative;
+    top: 0.5vh !important;
+    z-index: -10;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .wave {
+    position: relative;
+    top: -6vh !important;
+    z-index: -10;
+  }
+}
+
 @media screen and (max-width: 375px) {
   .contact-header {
-    font-size: 1.5rem;
-    padding: 0 1rem;
+    font-size: 1.3rem;
+    padding: 0 2rem;
   }
 
   .card-picture-2 {
@@ -1450,7 +1506,7 @@ label {
   }
 
   .contact-form-header {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 
   .contact-form-label-top {
@@ -1478,7 +1534,7 @@ label {
 
   .wave {
     position: relative;
-    top: -9vh;
+    top: -10vh !important;
     z-index: -10;
   }
 
@@ -1522,12 +1578,12 @@ label {
 
 @media screen and (max-width: 400px) {
   .contact-header {
-    font-size: 1.5rem;
-    padding: 0 1rem;
+    font-size: 1.3rem;
+    padding: 0 2rem;
   }
 
   .contact-form-header {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 
   .barracks {
@@ -1558,7 +1614,7 @@ label {
   }
 
   .sprucey {
-    top: -19vh;
+    top: -21.5vh;
     right: 3vw;
   }
 
@@ -1760,5 +1816,11 @@ label {
   .card-footer-icon1 {
     color: var(--off-white) !important;
     font-size: 1.3rem !important;
+  }
+}
+@media screen and (min-height: 800px) {
+  .wave {
+    position: relative;
+    top: 2vh !important;
   }
 }

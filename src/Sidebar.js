@@ -5,8 +5,6 @@ import Snowfall from "react-snowfall";
 import Wave from "react-wavify";
 import { GiShoonerSailboat } from "react-icons/gi";
 import { Link } from "react-router-dom";
-import { FiTwitter } from "react-icons/fi";
-import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import { GiSpyglass, GiWoodCabin, GiSmartphone } from "react-icons/gi";
 
 const Sidebar = () => {
@@ -89,7 +87,7 @@ const Sidebar = () => {
       </div>
       <ul className="links">
         <li>
-          <Link to="/mysite" onClick={closeSidebar}>
+          <Link to="/" onClick={closeSidebar}>
             <GiWoodCabin />
             main lodge
           </Link>

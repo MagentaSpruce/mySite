@@ -37,7 +37,7 @@ export const social = [
   },
   {
     id: 3,
-    url: "https://www.tiwtter.com",
+    url: "https://www.linkedin.com/in/spruceydev/",
     icon: <AiFillLinkedin />,
   },
 ];

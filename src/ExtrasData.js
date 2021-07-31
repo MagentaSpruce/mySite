@@ -1,5 +1,4 @@
 import { FaGithub } from "react-icons/fa";
-import forkify from "./forkifyIcon.png";
 
 const extras = [
   {
@@ -298,6 +297,51 @@ const extras = [
     text: "This React app takes in a user color and returns an assortment of that colors shades and tints. Also allows for C&P to the clipboard.",
     label1: <FaGithub />,
     label2: "https://github.com/MagentaSpruce/reactColorShader",
+  },
+  {
+    id: 33,
+    name: "Forkify",
+    project: "HTML, CSS, Javascript",
+    image: "",
+    text: "This project creates a recipe application which utilizes a custom API to pull recipe and cooking data for user search inputs",
+    label1: <FaGithub />,
+    label2: "https://github.com/MagentaSpruce/forkifyApp",
+  },
+  {
+    id: 34,
+    name: "Node PW Maker",
+    project: "NodeJS",
+    image: "",
+    text: "This project utilized NodeJS to create a command line password generator which outputs a randomized password to certain specified settings. Passwords can also be copied to the clipboard and saved into a .txt file.",
+    label1: <FaGithub />,
+    label2: "https://github.com/MagentaSpruce/passgen",
+  },
+  {
+    id: 35,
+    name: "React Dark Mode",
+    project: "React",
+    image: "",
+    text: "This React app creates a toggle dark mode for specified pages using changes to CSS class properties.",
+    label1: <FaGithub />,
+    label2: "https://github.com/MagentaSpruce/reactDarkMode",
+  },
+  {
+    id: 36,
+    name: "Photo Generator",
+    project: "React",
+    image: "",
+    text: "This React app uses the unsplash API to retrieve infinite images on scroll after user search input & with clickable images.",
+    label1: <FaGithub />,
+    label2: "https://github.com/MagentaSpruce/reactPhotoGenerator",
+  },
+  {
+    id: 37,
+    name: "Pagination",
+    project: "React",
+    image: "",
+    text: "This React app takes a list of GitHub users and paginates them on the clientside.",
+    label1: <FaGithub />,
+    label2: "https://github.com/MagentaSpruce/reactPagination",
   },
 ];
 

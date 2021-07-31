@@ -11,22 +11,22 @@ const Modal = () => {
   const [header2, setHeader2] = useState("I'm Sprucey.");
 
   const [modalBodyText, setModalBodyText] = useState(
-    "Thanks for visiting my little site, I do hope you like it❣ I myself am a full-stack Javascript based web developer who is always learning new magic ✨ Let's get whimsical❣"
+    "Thanks for visiting my little site, I do hope you like it! I myself am a full-stack Javascript based web developer who is always learning new magic ✨ Let's get whimsical❣"
   );
   const click = () => {
     if (value === "❌") {
       setValue("👀");
       setHeader1("");
-      setHeader2("Whoopsie!");
+      setHeader2("Whoopsies!");
       setModalBodyText(
-        "I thought I fixed that bug 🐛... No worries though, all's well that ends well. Try it again and enjoy your look around!"
+        "I thought I fixed that bug 🐛... No worries friend, all's well that ends well. Try it again and enjoy your look around!"
       );
     } else if (value === "👀") {
       setValue("😅");
       setHeader1("");
       setHeader2("Er herm..");
       setModalBodyText(
-        "Sorry about this. Hey you mind not mentioning it to my boss? We're all friends here right? It should definitely be working now though."
+        "Sorry about this. Would you mind not mentioning it to my boss? We're all friends here right? It should definitely be working now though."
       );
     } else if (value === "😅") {
       setValue("😒");
@@ -41,7 +41,7 @@ const Modal = () => {
       setHeader1("");
       setHeader2("Fixed it 😎");
       setModalBodyText(
-        "What? You thought I didn't know what I was doing or something? I went to university!"
+        "What? You thought I didn't know what I was doing or something? 😉. Enjoy your look around!"
       );
       setPhoto(profilePic);
     } else if (value === "✅") {
@@ -51,7 +51,7 @@ const Modal = () => {
         setHeader1("Hi! 👋");
         setHeader2("I'm Sprucey");
         setModalBodyText(
-          "Thanks for visiting my little site. I do hope you like it❣ I'm a full-stack Javascript based web developer who is always learning new magic ✨ Let's get whimsical❣"
+          "Thanks for visiting my little site. I do hope you like it! I'm a full-stack Javascript based web developer who is always learning new magic. Let's get whimsical❣"
         );
       }, 500);
     } else {

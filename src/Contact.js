@@ -25,7 +25,7 @@ const Contact = () => {
   return (
     <>
       <Particle />
-      <main>
+      <main className="contact-page">
         <button className="sidebar-toggle" onClick={openSidebar}>
           <GiYinYang />
         </button>

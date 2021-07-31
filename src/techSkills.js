@@ -2,7 +2,7 @@ const Stack = [
   {
     id: 1,
     order: 1,
-    title: "Front End Skillz",
+    title: "Client Side",
     experience: "2500+ Hours",
     stack: [
       "HTML, CSS, SASS, Bootstrap, JavaScript, & React based",
@@ -10,12 +10,12 @@ const Stack = [
       "Git | Version control",
       "Testing & debugging",
     ],
-    label: "front-end",
+    label: "Front-end",
   },
   {
     id: 2,
     order: 2,
-    title: "Back End Skillz",
+    title: "Server Side",
     experience: "1000+ Hours",
     stack: [
       "NodeJS, Express, MongoDB, Mongoose & PUG based",
@@ -23,12 +23,12 @@ const Stack = [
       "Database management",
       "Web hosting",
     ],
-    label: "back-end",
+    label: "Back End",
   },
   {
     id: 3,
     order: 3,
-    title: "Current Trajectory",
+    title: "En Route",
     experience: "In order of learning:",
     stack: [
       "NextJS | Three.js |  React Native",
@@ -37,7 +37,7 @@ const Stack = [
       "Solidity",
       "RUST",
     ],
-    label: "En Route",
+    label: "Next-End",
   },
 ];
 

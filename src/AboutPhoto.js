@@ -10,8 +10,13 @@ const AboutPhoto = () => {
           <img className="about-img" src={me} alt="" />
         </div>
         <div className="img-icons-container">
-          <AiFillGithub className="about-icons" />
-          <AiFillLinkedin className="about-icons" />
+          <a href="https://github.com/MagentaSpruce">
+            {" "}
+            <AiFillGithub className="about-icons" />
+          </a>{" "}
+          <a href="https://www.linkedin.com/in/spruceydev/">
+            <AiFillLinkedin className="about-icons" />
+          </a>
         </div>
       </div>
     </>
