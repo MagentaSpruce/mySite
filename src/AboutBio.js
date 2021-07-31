@@ -15,11 +15,11 @@ const AboutBio = () => {
         <br />
         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;I code in order to develop the
         skillsets to eventually design, create, and launch fin-tech applications
-        for DeFi. I currently use the MERN stack for building out projects or
-        React for SPA's. I am interested in learning about all things technical
-        and programming related. Before coding and COVID I had a successful
-        business in Thailand and attended an international medical school
-        program in Ukraine.
+        for DeFi. I currently use the MERN stack for building out larger
+        projects or React for SPA's. I am interested in learning about all
+        things technical and programming related. Before coding and COVID I had
+        a successful business in Thailand and attended an international medical
+        school program in Ukraine.
         <br />
         <br />
         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Living and working for many years
