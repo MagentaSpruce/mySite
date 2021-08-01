@@ -1483,6 +1483,10 @@ label {
     top: 0.5vh !important;
     z-index: -10;
   }
+
+  .card-picture-3 {
+    width: 88%;
+  }
 }
 
 @media screen and (max-width: 400px) {
@@ -1501,6 +1505,11 @@ label {
 
   .card-picture-2 {
     width: 84%;
+    padding: 1rem;
+  }
+
+  .card-picture-3 {
+    width: 88%;
   }
 
   .contact-form-header {
