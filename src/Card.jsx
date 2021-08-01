@@ -62,7 +62,6 @@ export default function MediaCard() {
                 variant="body2"
                 color="textSecondary"
                 component="p"
-                HEAD
               >
                 {" "}
                 I built this website for my sister who is starting her own
