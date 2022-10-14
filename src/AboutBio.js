@@ -3,12 +3,12 @@ import React from "react";
 const AboutBio = () => {
   return (
     <main className="about-me">
-      <h2 className="about-me-header">My real name's Seth</h2>
+      <h2 className="about-me-header">My real name's Bodi</h2>
       <h3 className="about-me-header">I'm a burgeoning tech wizard</h3>
       <div className="underline"></div>
       <p className="about-p">
         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; I'm originally from the USA. My
-        coding handle is Magenta Spruce and I have a B.S. in Biology awarded in
+        coding handle is Bodi Augustus and I have a B.S. in Biology awarded in
         2015. Soon after graduating I left the US and since then have lived and
         worked in Micronesia, Nepal, Thailand, France, and Ukraine.
         <br />
@@ -39,7 +39,7 @@ const AboutBio = () => {
         all. I hope we get to work together soon!
         <br />
         <br />
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;-Seth Nettles
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;-Bodi Augustus
       </p>
     </main>
   );
