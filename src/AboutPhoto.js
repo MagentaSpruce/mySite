@@ -14,7 +14,7 @@ const AboutPhoto = () => {
             {" "}
             <AiFillGithub className="about-icons" />
           </a>{" "}
-          <a href="https://www.linkedin.com/in/spruceydev/">
+          <a href="#">
             <AiFillLinkedin className="about-icons" />
           </a>
         </div>
